@@ -4,141 +4,137 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jisen Li | Personal Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px auto;
-      max-width: 800px;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-    h1 {
-      font-size: 28px;
-      color: #2c3e50;
-      margin-bottom: 5px;
-    }
-    h2 {
-      font-size: 22px;
-      color: #2c3e50;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-    }
-    a {
-      color: #2980b9;
-      text-decoration: none;
-    }
-    .section {
-      margin-bottom: 35px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .bold {
-      font-weight: bold;
-    }
-    .experience-entry {
-      margin-bottom: 15px;
-    }
-    .header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 30px;
-    }
-    .header img {
-      width: 110px;
-      height: 110px;
-      border-radius: 12px;
-      object-fit: cover;
-      margin-right: 20px;
-    }
-  </style>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
 
-  <div class="header">
-    <img src="src/profile.jpg" alt="Profile Photo" />
+
+  <div class="container py-5">
+    <div class="row g-4">
+      <!-- Left Sidebar -->
+      <div class="col-12 col-md-4 col-lg-3 d-flex flex-column align-items-center align-items-md-start text-center text-md-start bg-white rounded-3 shadow-sm p-4 h-100">
+        <img src="src/profile.jpg" alt="Profile Photo" class="rounded-4 shadow mb-3 border border-3" style="width:120px;height:120px;object-fit:cover;" />
+        <h1 class="fw-bold mb-2 fs-3">Jisen Li</h1>
+        <div class="mb-2">
+          <a href="mailto:jisenli2@illinois.edu" class="d-block text-decoration-none text-dark mb-1"><i class="bi bi-envelope me-2"></i>jisenli2@illinois.edu</a>
+          <a href="https://github.com/mtilyxuegao" target="_blank" class="d-block text-decoration-none text-dark mb-1"><i class="bi bi-github me-2"></i>GitHub</a>
+          <a href="https://www.linkedin.com/in/jisenli/" target="_blank" class="d-block text-decoration-none mb-1" style="color:#0A66C2;"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+        </div>
+      </div>
+      <!-- Main Content -->
+      <div class="col-12 col-md-8 col-lg-9">
+
+        <div class="mb-5">
+          <h2 class="h4 border-bottom pb-2 mb-3">About Me</h2>
+          <p>
+            Hi! I'm <span class="fw-semibold text-dark">Jisen Li</span>, an undergraduate student majoring in Mathematics and Computer Science at UIUC, graduating in May 2026.<br>
+          </p>
+          </p>
+            I have a strong interest in applied machine learning and intelligent systems, especially in the intersection of
+            <span class="fw-semibold text-dark">LLM fine-tuning, multimodal learning, agentic AI, and search/ads/recommendation</span>. I’m currently an <span class="fw-semibold text-dark">AI/ML intern at Snowflake</span>, and I’ve previously interned at <span class="fw-semibold text-dark">Bytedance (TikTok)</span>.
+          </p>
+          <p>
+            Outside of academics, I enjoy <span class="fw-semibold text-dark">fitness, billiards, making coffee</span>, and playing both <span class="fw-semibold text-dark">Go and Texas Hold’em</span>. I'm also exploring my potential in <span class="fw-semibold text-dark">quantitative finance and trading</span>. Feel free to reach out for a chat!
+          </p>
+        </div>
+
+        <div class="mb-5">
+  <h2 class="h4 border-bottom pb-2 mb-3">Interests</h2>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item ps-0">
+      <span class="fw-semibold text-dark">LLM Fine-tuning:</span> Instruction tuning, contrastive learning, CoT, and RLHF for model adaptation.
+    </li>
+    <li class="list-group-item ps-0">
+      <span class="fw-semibold text-dark">Multimodal Learning:</span> Vision-text models and cross-modal alignment using frozen LLMs.
+    </li>
+    <li class="list-group-item ps-0">
+      <span class="fw-semibold text-dark">Search, Ads, and Recommendation:</span> RAG, vector search, and next-item prediction in production.
+    </li>
+    <li class="list-group-item ps-0">
+      <span class="fw-semibold text-dark">Agentic AI:</span> Agents with memory, planning, and decision-making for complex tasks.
+    </li>
+  </ul>
+</div>
+
+  <div class="mb-5">
+  <h2 class="h4 border-bottom pb-2 mb-3">Experience</h2>
+
+  <div class="mb-3 ps-3 border-start border-3 border-primary-subtle">
+    <div class="fw-semibold text-dark" style="font-size: 1.1rem; margin-bottom: 6px;">
+      Snowflake – AI/ML Intern (Cortex Search) 
+      <span class="text-secondary" style="font-size: 0.95rem;">| May 2025 – Now</span>
+    </div>
     <div>
-      <h1>Jisen Li</h1>
-      <p>
-        Email: <a href="mailto:jisenli2@illinois.edu">jisenli2@illinois.edu</a> |
-        <a href="https://github.com/mtilyxuegao" target="_blank">GitHub</a> |
-        <a href="https://www.linkedin.com/in/jisenli/" target="_blank">LinkedIn</a>
-      </p>
+      Fine-tuned the Arctic embed v2.0 model for semantic retrieval using <strong>contrastive learning</strong>, <strong>consistency filtering</strong>, and <strong>CoT-generated queries</strong>. 
+      Constructed hard negatives with BM25, built an <strong>LLM evaluation framework</strong>, and improved nDCG by 15%.<br>
+      Additionally, developed a <strong>Gaussian Process Optimization</strong> (GPO) system for auto-tuning hybrid search parameters, optimizing Recall@K and sDCG across retrieval and reranking stages. 
+      Final config deployed to <strong>Global Service</strong>.
     </div>
   </div>
 
-  <div class="section">
-    <h2>About Me</h2>
-    <p>
-      Hi! I'm <span class="bold">Jisen Li</span>, an undergraduate student majoring in Mathematics and Computer Science at UIUC (GPA 3.97), graduating in May 2026. 
-      I have a strong interest in applied machine learning and intelligent systems, especially in the intersection of 
-      <span class="bold">LLM fine-tuning, multimodal learning, agentic AI, and search/ads/recommendation</span>. 
-      I’m currently an <span class="bold">AI/ML intern at Snowflake</span>, and I’ve previously interned at <span class="bold">Bytedance (TikTok)</span>.
-    </p>
-    <p>
-      Outside of academics, I enjoy <span class="bold">fitness, billiards, making coffee</span>, and playing both <span class="bold">Go and Texas Hold’em</span>. 
-      I'm also exploring my potential in <span class="bold">quantitative finance and trading</span>. Feel free to reach out for a chat!
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Interests</h2>
-    <ul>
-      <li>
-        <span class="bold">LLM Fine-tuning:</span> Focused on instruction tuning, contrastive learning, CoT prompting, and RLHF to adapt foundation models to downstream tasks.
-      </li>
-      <li>
-        <span class="bold">Multimodal Learning:</span> Building models that integrate vision, text, and structured data for richer understanding and interaction.
-      </li>
-      <li>
-        <span class="bold">Search, Ads, and Recommendation:</span> Specialized in retrieval-augmented generation (RAG), hybrid vector search, and next-item prediction in real-world systems.
-      </li>
-      <li>
-        <span class="bold">Agentic AI:</span> Interested in autonomous agents with memory, planning, and reasoning abilities for task-solving and decision-making in complex environments.
-      </li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Experience</h2>
-    <div class="experience-entry">
-      <div><span class="bold">Snowflake – AI/ML Intern (Cortex Search)</span> | May 2025 – Now</div>
-      <div>Fine-tuned Arctic embed v2.0 with contrastive learning and CoT query generation (+15% nDCG). Designed GPO-based auto-tuning system for hybrid search deployment.</div>
+  <div class="mb-3 ps-3 border-start border-3 border-primary-subtle">
+    <div class="fw-semibold text-dark" style="font-size: 1.1rem; margin-bottom: 6px;">
+      Bytedance (TikTok) – Machine Learning Engineer Intern 
+      <span class="text-secondary" style="font-size: 0.95rem;">| Aug 2024 – Dec 2024</span>
     </div>
-    <div class="experience-entry">
-      <div><span class="bold">Bytedance (TikTok) – Machine Learning Engineer Intern</span> | Aug 2024 – Dec 2024</div>
-      <div>Built Rec Qwen model (Qwen2.5 + LLaVA). Fine-tuned via prompt engineering and loss shaping, achieving +28% CTR prediction accuracy.</div>
+    <div>
+      Developed <strong>Rec Qwen</strong> model based on Qwen2.5 0.5B/7B for multimodal next-item recommendation. 
+      Designed a <strong>LLaVA-inspired architecture</strong> with an MLP projector to align user profiles and content embeddings under a frozen LLM backbone.<br>
+      Fine-tuned with <strong>prompt engineering</strong>, improved output structure and loss, and achieved a <strong>28% CTR accuracy gain</strong> in real-world ad recommendation settings.
+    </div>
+  </div>
+</div>
+
+        <div class="mb-5">
+  <h2 class="h4 border-bottom pb-2 mb-3">Research</h2>
+
+  <div class="mb-3 ps-3 border-start border-3 border-primary-subtle">
+    <div class="fw-semibold text-dark" style="font-size: 1.1rem; margin-bottom: 6px;">
+      University of Chicago (Globus Lab)
+      <span class="text-secondary" style="font-size: 0.95rem;">| Jun 2024 – Aug 2024</span>
+    </div>
+    <div>
+      Built a deployment pipeline for AI/ML models on the Garden platform with Delta HPC integration. 
+      Added <strong>GPU support</strong> to improve scalability for real-time scientific inference.
+      Mentored by <span class="fw-semibold text-dark">Dr. Eliu A. Huerta</span>.
     </div>
   </div>
 
-  <div class="section">
-    <h2>Research</h2>
-    <ul>
-      <li>
-        <span class="bold">University of Chicago (Globus Lab)</span> – Designed an AI/ML deployment pipeline for scientific models on Garden and Delta HPC. 
-        Added GPU support for scalable inference. Mentored by <span class="bold">Dr. Eliu A. Huerta</span>.
-      </li>
-      <li>
-        <span class="bold">Tsinghua University</span> – Developed non-contact HRV monitoring algorithm using OpenCV + EVM. 
-        Enhanced motion robustness with rPPG signal processing, achieving +12% accuracy under motion. Mentored by <span class="bold">Prof. Yongqiang Lyu</span>.
-      </li>
-    </ul>
+  <div class="mb-3 ps-3 border-start border-3 border-primary-subtle">
+    <div class="fw-semibold text-dark" style="font-size: 1.1rem; margin-bottom: 6px;">
+      Tsinghua University
+      <span class="text-secondary" style="font-size: 0.95rem;">| Jan 2020 – Apr 2021</span>
+    </div>
+    <div>
+      Developed a non-contact HRV algorithm using OpenCV and <strong>Eulerian Video Magnification</strong>, 
+      with motion-robust signal processing via rPPG. Achieved +12% accuracy under motion. 
+      Mentored by <span class="fw-semibold text-dark">Prof. Yongqiang Lyu</span>.
+    </div>
   </div>
+</div>
 
-  <div class="section">
-    <h2>Education</h2>
-    <p>
-      <span class="bold">University of Illinois Urbana-Champaign (UIUC)</span><br/>
-      B.S. in Mathematics + Computer Science, GPA: 3.97<br/>
-      Aug 2023 – May 2026
-    </p>
-    <p>
-      <span class="bold">Huazhong University of Science and Technology (HUST)</span><br/>
-      B.S. in Computer Science<br/>
-      Sep 2021 – Jan 2023 (Transferred)
-    </p>
+
+        <div class="mb-2">
+          <h2 class="h4 border-bottom pb-2 mb-3">Education</h2>
+          <div class="mb-2">
+            <span class="fw-semibold text-dark">University of Illinois Urbana-Champaign (UIUC)</span><br>
+            B.S. in Mathematics + Computer Science, GPA: 3.97<br>
+            Aug 2023 – May 2026
+          </div>
+          <div>
+            <span class="fw-semibold text-dark">Huazhong University of Science and Technology (HUST)</span><br>
+            B.S. in Computer Science<br>
+            Sep 2021 – Jan 2023 (Transferred)
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
-
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
