@@ -7,54 +7,132 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
+      margin: 40px auto;
+      max-width: 800px;
       background-color: #f9f9f9;
       color: #333;
+      line-height: 1.6;
     }
-    h1, h2 {
+    h1 {
+      font-size: 28px;
       color: #2c3e50;
+      margin-bottom: 0;
+    }
+    h2 {
+      font-size: 22px;
+      color: #2c3e50;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
     }
     a {
       color: #2980b9;
       text-decoration: none;
     }
+    .meta {
+      margin-bottom: 20px;
+    }
     .section {
-      margin-bottom: 30px;
+      margin-bottom: 35px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    .experience-entry {
+      margin-bottom: 15px;
+    }
+    .photo {
+      float: right;
+      margin-left: 20px;
+      width: 120px;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
+
   <h1>Jisen Li</h1>
-  <p>Email: <a href="mailto:jisenli2@illinois.edu">jisenli2@illinois.edu</a> | 
-     <a href="https://github.com/mtilyxuegao" target="_blank">GitHub</a> | 
-     <a href="https://www.linkedin.com/in/jisenli/" target="_blank">LinkedIn</a>
+  <p class="meta">
+    Email: <a href="mailto:jisenli2@illinois.edu">jisenli2@illinois.edu</a> |
+    <a href="https://github.com/mtilyxuegao" target="_blank">GitHub</a> |
+    <a href="https://www.linkedin.com/in/jisenli/" target="_blank">LinkedIn</a>
   </p>
 
+  <img src="src/1.jpg" alt="Profile Photo" class="photo" />
+
   <div class="section">
-    <h2>Education</h2>
-    <p><strong>University of Illinois Urbana-Champaign</strong><br/>
-    B.S. in Mathematics + Computer Science (GPA: 3.97)<br/>
-    Dean's List | Aug 2023 – May 2026</p>
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm <span class="bold">Jisen Li</span>, an undergraduate student majoring in Mathematics and Computer Science at UIUC (GPA 3.97), graduating in May 2026. 
+      I have a strong interest in applied machine learning and intelligent systems, especially in the intersection of 
+      <span class="bold">LLM fine-tuning, multimodal learning, agentic AI, and LLM-based retrieval, generation, and recommendation</span>. 
+      I’m currently an <span class="bold">AI/ML intern at Snowflake</span>, and I’ve previously interned at <span class="bold">Bytedance (TikTok)</span>.
+    </p>
+    <p>
+      Outside of academics, I enjoy <span class="bold">fitness, billiards, making coffee</span>, and playing both <span class="bold">Go and Texas Hold’em</span>. 
+      I'm also exploring my potential in <span class="bold">quantitative finance and trading</span>. Feel free to reach out for a chat!
+    </p>
   </div>
+
+  <div class="section">
+  <h2>Interests</h2>
+  <ul>
+    <li>
+      <span class="bold">LLM Fine-tuning:</span> Focused on instruction tuning, contrastive learning, CoT prompting, and RLHF to adapt foundation models to downstream tasks.
+    </li>
+    <li>
+      <span class="bold">Multimodal Learning:</span> Building models that integrate vision, text, and structured data for richer understanding and interaction.
+    </li>
+    <li>
+      <span class="bold">Search, Ads, and Recommendation:</span> Specialized in retrieval-augmented generation (RAG), hybrid vector search, and next-item prediction in real-world systems.
+    </li>
+    <li>
+      <span class="bold">Agentic AI:</span> Interested in autonomous agents with memory, planning, and reasoning abilities for task-solving and decision-making in complex environments.
+    </li>
+  </ul>
+</div>
 
   <div class="section">
     <h2>Experience</h2>
-    <p><strong>Snowflake Inc. – Software Engineer Intern (AI/ML)</strong><br/>
-    Fine-tuned Arctic embed v2.0 model, built auto-tuning system using Gaussian Process Optimization, deployed to global service.<br/>
-    +15% improvement in nDCG via contrastive learning and LLM evaluation.</p>
-
-    <p><strong>Bytedance (TikTok) – Machine Learning Engineer Intern</strong><br/>
-    Built Rec qwen model for multimodal recommendation using Qwen2.5 and LLaVA-inspired design.<br/>
-    +28% CTR accuracy improvement.</p>
-
-    <p><strong>Bluelet.ai – Founding MLE & Search Tech Lead</strong><br/>
-    Building recruiting AI agents that match and reach top talent automatically.</p>
+    <div class="experience-entry">
+      <div><span class="bold">Snowflake – AI/ML Intern (Cortex Search)</span> | May 2025 – Now</div>
+      <div>Fine-tuned Arctic embed v2.0 with contrastive learning and CoT query generation (+15% nDCG). Designed GPO-based auto-tuning system for hybrid search deployment.</div>
+    </div>
+    <div class="experience-entry">
+      <div><span class="bold">Bytedance (TikTok) – Machine Learning Engineer Intern</span> | Aug 2024 – Dec 2024</div>
+      <div>Built Rec Qwen model (Qwen2.5 + LLaVA). Fine-tuned via prompt engineering and loss shaping, achieving +28% CTR prediction accuracy.</div>
+    </div>
   </div>
 
   <div class="section">
-    <h2>Projects</h2>
-    <p><strong>Travel Bot:</strong> Built a RAG-based hotel recommendation system using Qdrant, Ray, and OpenAI API.</p>
-    <p><strong>AIoneMusic:</strong> Trained GPT-2 model for songwriting; deployed to platform with 1000+ users.</p>
+    <h2>Research</h2>
+    <ul>
+      <li>
+        <span class="bold">University of Chicago (Globus Lab)</span> – Designed an AI/ML deployment pipeline for scientific models on Garden and Delta HPC. 
+        Added GPU support for scalable inference. Mentored by <span class="bold">Dr. Eliu A. Huerta</span>.
+      </li>
+      <li>
+        <span class="bold">Tsinghua University</span> – Developed non-contact HRV monitoring algorithm using OpenCV + EVM. 
+        Enhanced motion robustness with rPPG signal processing, achieving +12% accuracy under motion. Mentored by <span class="bold">Prof. Yongqiang Lyu</span>.
+      </li>
+    </ul>
   </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <p>
+      <span class="bold">University of Illinois Urbana-Champaign (UIUC)</span><br/>
+      B.S. in Mathematics + Computer Science, GPA: 3.97<br/>
+      Aug 2023 – May 2026
+    </p>
+    <p>
+      <span class="bold">Huazhong University of Science and Technology (HUST)</span><br/>
+      B.S. in Computer Science<br/>
+      Sep 2021 – Jan 2023 (Transferred)
+    </p>
+  </div>
+
 </body>
 </html>
