@@ -16,7 +16,7 @@
     h1 {
       font-size: 28px;
       color: #2c3e50;
-      margin-bottom: 0;
+      margin-bottom: 5px;
     }
     h2 {
       font-size: 22px;
@@ -27,9 +27,6 @@
     a {
       color: #2980b9;
       text-decoration: none;
-    }
-    .meta {
-      margin-bottom: 20px;
     }
     .section {
       margin-bottom: 35px;
@@ -43,24 +40,33 @@
     .experience-entry {
       margin-bottom: 15px;
     }
-    .photo {
-      float: right;
-      margin-left: 20px;
-      width: 120px;
-      border-radius: 8px;
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .header img {
+      width: 110px;
+      height: 110px;
+      border-radius: 12px;
+      object-fit: cover;
+      margin-right: 20px;
     }
   </style>
 </head>
 <body>
 
-  <h1>Jisen Li</h1>
-  <p class="meta">
-    Email: <a href="mailto:jisenli2@illinois.edu">jisenli2@illinois.edu</a> |
-    <a href="https://github.com/mtilyxuegao" target="_blank">GitHub</a> |
-    <a href="https://www.linkedin.com/in/jisenli/" target="_blank">LinkedIn</a>
-  </p>
-
-  <img src="src/1.jpg" alt="Profile Photo" class="photo" />
+  <div class="header">
+    <img src="src/profile.jpg" alt="Profile Photo" />
+    <div>
+      <h1>Jisen Li</h1>
+      <p>
+        Email: <a href="mailto:jisenli2@illinois.edu">jisenli2@illinois.edu</a> |
+        <a href="https://github.com/mtilyxuegao" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/jisenli/" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+  </div>
 
   <div class="section">
     <h2>About Me</h2>
@@ -77,22 +83,22 @@
   </div>
 
   <div class="section">
-  <h2>Interests</h2>
-  <ul>
-    <li>
-      <span class="bold">LLM Fine-tuning:</span> Focused on instruction tuning, contrastive learning, CoT prompting, and RLHF to adapt foundation models to downstream tasks.
-    </li>
-    <li>
-      <span class="bold">Multimodal Learning:</span> Building models that integrate vision, text, and structured data for richer understanding and interaction.
-    </li>
-    <li>
-      <span class="bold">Search, Ads, and Recommendation:</span> Specialized in retrieval-augmented generation (RAG), hybrid vector search, and next-item prediction in real-world systems.
-    </li>
-    <li>
-      <span class="bold">Agentic AI:</span> Interested in autonomous agents with memory, planning, and reasoning abilities for task-solving and decision-making in complex environments.
-    </li>
-  </ul>
-</div>
+    <h2>Interests</h2>
+    <ul>
+      <li>
+        <span class="bold">LLM Fine-tuning:</span> Focused on instruction tuning, contrastive learning, CoT prompting, and RLHF to adapt foundation models to downstream tasks.
+      </li>
+      <li>
+        <span class="bold">Multimodal Learning:</span> Building models that integrate vision, text, and structured data for richer understanding and interaction.
+      </li>
+      <li>
+        <span class="bold">Search, Ads, and Recommendation:</span> Specialized in retrieval-augmented generation (RAG), hybrid vector search, and next-item prediction in real-world systems.
+      </li>
+      <li>
+        <span class="bold">Agentic AI:</span> Interested in autonomous agents with memory, planning, and reasoning abilities for task-solving and decision-making in complex environments.
+      </li>
+    </ul>
+  </div>
 
   <div class="section">
     <h2>Experience</h2>
