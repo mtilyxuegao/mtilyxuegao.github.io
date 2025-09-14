@@ -2,7 +2,7 @@
 // Requires a Cloudflare Worker API providing /hit (POST) and /summary (GET)
 
 (function () {
-  const API_BASE = window.CF_ANALYTICS_API || 'https://YOUR_WORKER_SUBDOMAIN.workers.dev/analytics';
+  const API_BASE = window.CF_ANALYTICS_API || 'https://website.mtilyjason.workers.dev/analytics';
 
   // Basic helper
   async function jsonFetch(url, opts) {
