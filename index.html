@@ -228,26 +228,6 @@
   <!-- Configure Cloudflare Worker API endpoint for stats.js -->
   <script>
     window.CF_ANALYTICS_API = "https://website.mtilyjason.workers.dev/analytics";
-    
-    // Fallback test data if API fails
-    window.TEST_ANALYTICS_DATA = {
-      total: 1234,
-      countries: {
-        "US": 450,
-        "CN": 320,
-        "GB": 180,
-        "DE": 120,
-        "JP": 90,
-        "CA": 74
-      },
-      points: [
-        { lat: 40.7128, lon: -74.0060, city: "New York", country: "US", ts: Date.now() - 86400000 },
-        { lat: 39.9042, lon: 116.4074, city: "Beijing", country: "CN", ts: Date.now() - 72000000 },
-        { lat: 51.5074, lon: -0.1278, city: "London", country: "GB", ts: Date.now() - 36000000 },
-        { lat: 52.5200, lon: 13.4050, city: "Berlin", country: "DE", ts: Date.now() - 18000000 },
-        { lat: 35.6762, lon: 139.6503, city: "Tokyo", country: "JP", ts: Date.now() - 9000000 }
-      ]
-    };
   </script>
   <!-- Stats visualization (fetches from Cloudflare Worker API) -->
   <script defer src="stats.js"></script>

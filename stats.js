@@ -4,11 +4,24 @@
 (function () {
   const API_BASE = window.CF_ANALYTICS_API || 'https://website.mtilyjason.workers.dev/analytics';
 
-  // Basic helper
+  // Basic helper with debugging
   async function jsonFetch(url, opts) {
+    console.log('Making request to:', url);
+    console.log('Request options:', opts);
+    
     const res = await fetch(url, opts);
-    if (!res.ok) throw new Error('Request failed: ' + res.status);
-    return res.json();
+    console.log('Response status:', res.status);
+    console.log('Response headers:', Object.fromEntries(res.headers.entries()));
+    
+    if (!res.ok) {
+      const errorText = await res.text();
+      console.error('Response error text:', errorText);
+      throw new Error(`Request failed: ${res.status} - ${errorText}`);
+    }
+    
+    const data = await res.json();
+    console.log('Parsed JSON data:', data);
+    return data;
   }
 
   // Render visit count
@@ -74,30 +87,37 @@
     try {
       // Record a visit; keepalive to avoid blocking unload
       const dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+      console.log('Do Not Track status:', dnt);
+      
       if (!(dnt === '1' || dnt === 'yes')) {
-        fetch(API_BASE + '/hit', { method: 'POST', mode: 'cors', keepalive: true }).catch(() => {});
+        console.log('Recording visit to:', API_BASE + '/hit');
+        fetch(API_BASE + '/hit', { method: 'POST', mode: 'cors', keepalive: true })
+          .then(response => console.log('Hit response status:', response.status))
+          .catch(error => console.error('Hit request failed:', error));
+      } else {
+        console.log('Skipping visit recording due to Do Not Track');
       }
 
       // Then load summary to render
-      console.log('Fetching from:', API_BASE + '/summary');
+      console.log('Fetching summary from:', API_BASE + '/summary');
       const summary = await jsonFetch(API_BASE + '/summary', { mode: 'cors' });
       console.log('Summary received:', summary);
+      console.log('Total visits:', summary.total);
+      console.log('Countries data:', summary.countries);
+      console.log('Points data:', summary.points);
+      
       renderCount(summary.total);
       renderMap(summary);
     } catch (e) {
-      // Show error in console for debugging
+      // Show detailed error information for debugging
       console.error('Analytics error:', e);
+      console.error('Error message:', e.message);
+      console.error('Error stack:', e.stack);
       console.error('API_BASE:', API_BASE);
+      console.error('Full URL attempted:', API_BASE + '/summary');
       
-      // Use fallback test data if available
-      if (window.TEST_ANALYTICS_DATA) {
-        console.log('Using fallback test data');
-        renderCount(window.TEST_ANALYTICS_DATA.total);
-        renderMap(window.TEST_ANALYTICS_DATA);
-      } else {
-        // Still render placeholder
-        renderCount(0);
-      }
+      // Just show placeholder
+      renderCount('--');
     }
   }
 
