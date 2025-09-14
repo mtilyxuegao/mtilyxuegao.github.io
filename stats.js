@@ -28,11 +28,11 @@
 
     // Build markers: [{name, coords: [lat, lon]}]
     const markers = points
-      .filter(p => typeof p.lat === 'number' && typeof p.lon === 'number')
+      .filter(p => typeof p.lat === 'number' && (typeof p.lon === 'number' || typeof p.lng === 'number'))
       .slice(-500) // render up to 500 latest points
       .map(p => ({
         name: [p.city, p.country].filter(Boolean).join(', '),
-        coords: [p.lat, p.lon]
+        coords: [p.lat, p.lon || p.lng]
       }));
 
     // Destroy existing map if any
@@ -79,12 +79,25 @@
       }
 
       // Then load summary to render
+      console.log('Fetching from:', API_BASE + '/summary');
       const summary = await jsonFetch(API_BASE + '/summary', { mode: 'cors' });
+      console.log('Summary received:', summary);
       renderCount(summary.total);
       renderMap(summary);
     } catch (e) {
-      // Fail silently to avoid breaking page
-      // console.error(e);
+      // Show error in console for debugging
+      console.error('Analytics error:', e);
+      console.error('API_BASE:', API_BASE);
+      
+      // Use fallback test data if available
+      if (window.TEST_ANALYTICS_DATA) {
+        console.log('Using fallback test data');
+        renderCount(window.TEST_ANALYTICS_DATA.total);
+        renderMap(window.TEST_ANALYTICS_DATA);
+      } else {
+        // Still render placeholder
+        renderCount(0);
+      }
     }
   }
 
