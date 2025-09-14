@@ -223,11 +223,16 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Vector map library + world map dataset -->
-  <script src="https://cdn.jsdelivr.net/npm/jsvectormap"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jsvectormap/dist/maps/world.js"></script>
-  <!-- Configure Cloudflare Worker API endpoint for stats.js -->
+  <script src="https://cdn.jsdelivr.net/npm/jsvectormap@latest/dist/js/jsvectormap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jsvectormap@latest/dist/maps/world.js"></script>
+  <!-- Configure Analytics API endpoint for stats.js -->
   <script>
-    window.CF_ANALYTICS_API = "https://website.mtilyjason.workers.dev/analytics";
+    // Use local test server for development, Cloudflare Worker for production
+    window.CF_ANALYTICS_API = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
+      ? "http://localhost:8000/analytics" 
+      : "https://website.mtilyjason.workers.dev/analytics";
+    
+    console.log('Analytics API endpoint:', window.CF_ANALYTICS_API);
   </script>
   <!-- Stats visualization (fetches from Cloudflare Worker API) -->
   <script defer src="stats.js"></script>
