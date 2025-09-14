@@ -8,13 +8,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <!-- Vector map styles for world map visualization -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap/dist/css/jsvectormap.min.css">
-  <!-- Analytics (configure one ID below, then keep analytics.js) -->
-  <script>
-    window.CF_BEACON_TOKEN = "22922303634d4e4bb0ab034734acf2b0";
-  </script>
-  <script defer src="analytics.js"></script>
+  <!-- Cloudflare Web Analytics -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "22922303634d4e4bb0ab034734acf2b0"}'></script>
+  <!-- End Cloudflare Web Analytics -->
 </head>
 <body>
 
@@ -203,38 +199,47 @@
     </div>
   </div>
 
-  <!-- Site Analytics (Counter + World Map) -->
-<div class="container pb-3">
-  <div class="row">
-    <div class="col-12 col-md-8 col-lg-9 offset-md-4 offset-lg-3">
-      <h2 class="h6 border-bottom pb-2 mb-2">Site Analytics</h2>
-      <div class="d-flex align-items-center gap-2 mb-2">
-        <div class="fs-5 fw-semibold mb-0" id="visit-count">--</div>
-        <div class="text-secondary">Total visits</div>
-      </div>
-      <div id="visitors-map" class="border rounded-3"
-           style="height:220px; max-width:100%;"></div>
-      <div class="small text-secondary mt-2">
-        Shows only country/city-level data. No raw IPs stored.
+  
+  <!-- Minimal Visit Counter (connectivity test) -->
+  <div class="container pb-3">
+    <div class="row">
+      <div class="col-12 col-md-8 col-lg-9 offset-md-4 offset-lg-3">
+        <div class="d-flex align-items-center gap-2 text-secondary small">
+          <span>Total visits:</span>
+          <span id="visit-total">--</span>
+        </div>
       </div>
     </div>
   </div>
-</div>
+ 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Vector map library + world map dataset -->
-  <script src="https://cdn.jsdelivr.net/npm/jsvectormap@latest/dist/js/jsvectormap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jsvectormap@latest/dist/maps/world.js"></script>
-  <!-- Configure Analytics API endpoint for stats.js -->
+  
+  <!-- Inline script to fetch total visits from Cloudflare Worker -->
   <script>
-    // Use local test server for development, Cloudflare Worker for production
-    window.CF_ANALYTICS_API = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
-      ? "http://localhost:8000/analytics" 
-      : "https://website.mtilyjason.workers.dev/analytics";
-    
-    console.log('Analytics API endpoint:', window.CF_ANALYTICS_API);
+    (function () {
+      var API_BASE = (window.CF_ANALYTICS_API) || ((window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+        ? 'http://localhost:8000/analytics'
+        : 'https://website.mtilyjason.workers.dev/analytics');
+      try {
+        var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+        if (!(dnt === '1' || dnt === 'yes')) {
+          fetch(API_BASE + '/hit', { method: 'POST', mode: 'cors', keepalive: true }).catch(function () {});
+        }
+      } catch (e) {}
+      fetch(API_BASE + '/summary', { mode: 'cors' })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          var el = document.getElementById('visit-total');
+          if (el) el.textContent = (data && typeof data.total === 'number') ? data.total.toLocaleString() : '--';
+        })
+        .catch(function (err) {
+          var el = document.getElementById('visit-total');
+          if (el) el.textContent = '—';
+          console.error('Visit summary failed:', err);
+        });
+    })();
   </script>
-  <!-- Stats visualization (fetches from Cloudflare Worker API) -->
-  <script defer src="stats.js"></script>
+  
 </body>
 </html>
