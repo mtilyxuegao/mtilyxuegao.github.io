@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jisen Li | Personal Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+      min-height: 100vh;
+    }
+
+    /* Sidebar card enhancement */
+    .sidebar-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .sidebar-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.08);
+    }
+
+    /* Profile image enhancement */
+    .profile-img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .profile-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    /* Link hover effects */
+    .sidebar-link {
+      transition: all 0.2s ease;
+      padding: 4px 0;
+      border-radius: 4px;
+    }
+    .sidebar-link:hover {
+      transform: translateX(4px);
+      opacity: 0.8;
+    }
+
+    /* Content sections */
+    .content-section {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.03);
+      transition: box-shadow 0.3s ease;
+    }
+    .content-section:hover {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    /* Section headers */
+    .section-header {
+      position: relative;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .section-header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #0A66C2 0%, #1967d2 100%);
+      border-radius: 2px;
+    }
+
+    /* Experience/Research items */
+    .timeline-item {
+      transition: transform 0.2s ease, background-color 0.2s ease;
+      padding: 1rem;
+      margin-left: -1rem;
+      margin-right: -1rem;
+      border-radius: 8px;
+    }
+    .timeline-item:hover {
+      background-color: rgba(10, 102, 194, 0.02);
+      transform: translateX(4px);
+    }
+
+    /* Border accent */
+    .border-accent {
+      border-left: 3px solid #0A66C2 !important;
+      border-radius: 4px;
+    }
+
+    /* Link styling */
+    a[href^="http"] {
+      transition: all 0.2s ease;
+    }
+    a[href^="http"]:hover {
+      opacity: 0.8;
+    }
+
+    /* List items */
+    .list-group-item {
+      transition: background-color 0.2s ease, transform 0.2s ease;
+      border: none !important;
+    }
+    .list-group-item:hover {
+      background-color: rgba(10, 102, 194, 0.03);
+      transform: translateX(4px);
+    }
+  </style>
+
+</head>
+<body>
+
+
+  <div class="container py-5">
+    <div class="row g-4">
+      <!-- Left Sidebar -->
+      <div class="col-12 col-md-4 col-lg-3 d-flex flex-column align-items-center align-items-md-start text-center text-md-start bg-white rounded-3 p-4 h-100 sidebar-card">
+        <img src="src/profile.jpg" alt="Profile Photo" class="rounded-4 mb-3 border border-3 profile-img" style="width:120px;height:120px;object-fit:cover;" />
+        <h1 class="fw-bold mb-2 fs-3">Jisen Li</h1>
+        <div class="mb-2">
+          <a href="mailto:jisenli2@illinois.edu" class="d-block text-decoration-none mb-1 sidebar-link" style="color:#5a6c7d;"><i class="bi bi-envelope me-2"></i>jisenli2@illinois.edu</a>
+          <a href="https://github.com/mtilyxuegao" target="_blank" class="d-block text-decoration-none mb-1 sidebar-link" style="color:#24292e;"><i class="bi bi-github me-2"></i>GitHub</a>
+          <a href="https://www.linkedin.com/in/jisenli/" target="_blank" class="d-block text-decoration-none mb-1 sidebar-link" style="color:#0A66C2;"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=ILdf8hYAAAAJ&hl=en" target="_blank" class="d-block text-decoration-none mb-1 sidebar-link" style="color:#1967d2;"><i class="bi bi-mortarboard-fill me-2"></i>Google Scholar</a>
+        </div>
+      </div>
+      <!-- Main Content -->
+      <div class="col-12 col-md-8 col-lg-9">
+
+        <div class="content-section">
+          <h2 class="h4 section-header">About Me</h2>
+          <p>
+            Hello! I'm <span class="fw-semibold text-dark">Jisen Li</span>, an undergraduate student majoring in Mathematics and Computer Science at the <span class="fw-semibold text-dark">University of Illinois Urbana-Champaign (UIUC)</span>, graduating in May 2026.
+            My research interests focus on <span class="fw-semibold text-dark">reasoning, retrieval and ranking, and artificial intelligence agents</span>.
+            Currently, I am a <span class="fw-semibold text-dark">Research Intern at Together AI</span>, working on Speculative Decoding/Quantization.
+          </p>
+          <p>
+            In the <span class="fw-semibold text-dark">industry</span>, I have interned at <span class="fw-semibold text-dark">Nexa AI</span>, researching on-device models and AI agents; at <span class="fw-semibold text-dark">Snowflake</span>, working on embedded search models and hybrid retrieval systems; and at <span class="fw-semibold text-dark">TikTok</span>, developing multimodal recommendation models.
+          </p>
+          <p>
+            In <span class="fw-semibold text-dark">academic research</span>, I have worked at <span class="fw-semibold text-dark">UIUC's U Lab</span> researching AI agent communication protocols and multi-agent benchmarking; at the <span class="fw-semibold text-dark">University of Chicago</span> researching AI deployment; and at <span class="fw-semibold text-dark">Tsinghua University</span> researching computer vision for healthcare.
+          </p>
+          <p>
+            In my free time, I enjoy <span class="fw-semibold text-dark">fitness, playing billiards</span>, and playing <span class="fw-semibold text-dark">Go and Texas Hold'em poker</span>.
+            Please feel free to contact me—I would be happy to connect with you!
+          </p>
+        </div>
+
+        <div class="mb-5">
+  <h2 class="h4 border-bottom pb-2 mb-3">News</h2>
+  <ul class="list-group list-group-flush">
+    <!-- News items will be added here -->
+  </ul>
+</div>
+
+        <div class="mb-5">
+  <h2 class="h4 border-bottom pb-2 mb-3">Interests</h2>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item ps-0">
+      <span class="fw-semibold text-dark">Inference:</span> Speculative Decoding, KV Cache Quantization, and efficient model serving for production deployment.
+    </li>
+    <li class="list-group-item ps-0">
+      <span class="fw-semibold text-dark">LLM Fine-tuning:</span> Instruction tuning, contrastive learning, CoT, and RLHF for model adaptation and alignment.
+    </li>
+    <li class="list-group-item ps-0">
+      <span class="fw-semibold text-dark">Multimodal:</span> Vision-text models and cross-modal alignment using frozen LLMs for multimodal understanding.
+    </li>
+    <li class="list-group-item ps-0">
+      <span class="fw-semibold text-dark">Agentic AI:</span> Agents with memory, planning, and decision-making for complex tasks and multi-agent collaboration.
+    </li>
+  </ul>
+</div>
+
+  <div class="mb-5">
+  <h2 class="h4 border-bottom pb-2 mb-3">Experience</h2>
+
+  <div class="mb-3 ps-3 border-start border-3 border-primary-subtle">
+    <div class="fw-semibold text-dark" style="font-size: 1.1rem; margin-bottom: 6px;">
+      <img src="src/together.png" alt="Together.ai Logo" style="width: 24px; height: 24px; margin-right: 8px; vertical-align: middle;">
+      Together AI – Research Intern
+      <span class="text-secondary" style="font-size: 0.95rem;">| Jan 2026 – Present</span>
+    </div>
+    <div>
+    <strong>Speculative Decoding (<a href="https://aurora-spec-ai.github.io/" target="_blank" class="text-decoration-none">Aurora</a>):</strong> Developed a unified training-serving system that continuously learns speculators from live inference traces using RL. Supports day-0 deployment, achieving 1.45× speedup on frontier models (MiniMax M2.1 229B, Qwen3-Coder-Next 80B) and 1.25× additional speedup under distribution shift.
+  </div>
+  </div>
+
+  <div class="mb-3 ps-3 border-start border-3 border-primary-subtle">
+    <div class="fw-semibold text-dark" style="font-size: 1.1rem; margin-bottom: 6px;">
+      <img src="src/Nexa.png" alt="Bluelet Logo" style="width: 24px; height: 24px; margin-right: 8px; vertical-align: middle;">
+      Nexa AI – AI Research Engineer Intern
+      <span class="text-secondary" style="font-size: 0.95rem;">| Oct 2025 – Dec 2025</span>
+    </div>
+    <div>
+    <strong>On-Device AI Agent:</strong> Deployed local Qwen3 VL model via Nexa SDK and LangChain, enabling tool use with Browser Use and MCP.<br>
+    <strong>SDK Development:</strong> Contributed to <span class="fw-semibold text-dark">nexa-sdk</span> for efficient NPU-based inference and cross-platform deployment.
+  </div>
+  </div>
+    
+  <div class="mb-3 ps-3 border-start border-3 border-primary-subtle">
+      <div class="fw-semibold text-dark" style="font-size: 1.1rem; margin-bottom: 6px;">
+        <img src="src/bluelet.png" alt="Bluelet Logo" style="width: 24px; height: 24px; margin-right: 8px; vertical-align: middle;">
+        Bluelet.ai – Search Tech Lead and Founding MLE
+        <span class="text-secondary" style="font-size: 0.95rem;">| Jun 2025 – Oct 2025</span>
+      </div>
+      <div>
+        <strong>Recruiting AI Agent:</strong> Autonomously finds, matches, and engages world-class talent—before anyone else does.
+      </div>
+  </div>
+
+
+  <div class="mb-3 ps-3 border-start border-3 border-primary-subtle">
+    <div class="fw-semibold text-dark" style="font-size: 1.1rem; margin-bottom: 6px;">
+      <img src="src/snow.png" alt="Snowflake Logo" style="width: 24px; height: 24px; margin-right: 8px; vertical-align: middle;">
+      Snowflake – Software Engineer Intern (AI/ML)
+      <span class="text-secondary" style="font-size: 0.95rem;">| May 2025 – Aug 2025</span>
+    </div>
+    <div>
+      <strong>Cortex Search:</strong> Fine-tuned the Arctic embed v2.0 model for semantic retrieval using <strong>contrastive learning</strong>, <strong>consistency filtering</strong>, and <strong>CoT-generated queries</strong>. 
+      Constructed hard negatives with BM25, built an <strong>LLM eval framework</strong>, and improved nDCG by 15%.<br>
+      Additionally, developed a <strong>Gaussian Process Optimization</strong> (GPO) system for auto-tuning hybrid search parameters, optimizing Recall@K and sDCG across retrieval and reranking stages. 
+      Final config deployed to <strong>Global Service</strong>.
+    </div>
+  </div>
+
+  <div class="mb-3 ps-3 border-start border-3 border-primary-subtle">
+    <div class="fw-semibold text-dark" style="font-size: 1.1rem; margin-bottom: 6px;">
+      <img src="src/tiktok.png" alt="TikTok Logo" style="width: 24px; height: 24px; margin-right: 8px; vertical-align: middle;">
+      TikTok – Machine Learning Engineer Intern 
+      <span class="text-secondary" style="font-size: 0.95rem;">| Aug 2024 – Dec 2024</span>
+    </div>
+    <div>
+      <strong>Multimodal Recommendation:</strong> Developed <strong>Rec_Qwen</strong> model based on Qwen2.5-0.5B/7B for multimodal next-item recommendation. Designed a <strong>LLaVA-inspired architecture</strong> with an MLP projector to align user profiles and content embeddings under a frozen LLM backbone. Fine-tuned with <strong>prompt engineering</strong>, improved output structure and loss, and achieved a <strong>28% CTR accuracy gain</strong> in real-world ad recommendation settings.
+    </div>
+  </div>
+</div>
+
+        <div class="mb-5">
+  <h2 class="h4 border-bottom pb-2 mb-3">Research</h2>
+  
+  <div class="mb-3 ps-3 border-start border-3 border-primary-subtle">
+  <div class="fw-semibold text-dark" style="font-size: 1.1rem; margin-bottom: 6px;">
+    <img src="src/together.png" alt="Together.ai Logo" style="width: 24px; height: 24px; margin-right: 8px; vertical-align: middle;">
+    Together.ai
+    <span class="text-secondary" style="font-size: 0.95rem;">| Sep 2025 – Present</span>
+  </div>
+  <div>
+    <strong>KV Cache Quantization:</strong> Built upon the K2V2 quantization strategy, combining sink32 and 25% K-channel precision boost to recover accuracy close to FP16; implemented evaluation pipelines with vLLM and SGLang.<br>
+    <strong>Outcome:</strong> Core Contributor, MLSys 2026. Supervised by <span class="fw-semibold text-dark">Dr. Shirley Wu</span>. <a href="https://arxiv.org/pdf/2511.18643" target="_blank" class="text-decoration-none">[Paper]</a>
+  </div>
+  </div>
+  
+  <div class="mb-3 ps-3 border-start border-3 border-primary-subtle">
+    <div class="fw-semibold text-dark" style="font-size: 1.1rem; margin-bottom: 6px;">
+      <img src="src/uiuc.png" alt="UIUC Logo" style="width: 24px; height: 24px; margin-right: 8px; vertical-align: middle;">
+      University of Illinois Urbana-Champaign
+      <span class="text-secondary" style="font-size: 0.95rem;">| Jul 2025 – Present</span>
+    </div>
+    <div>
+      <strong>AI Agent Protocol Benchmarking:</strong> Developing a unified benchmark to evaluate AI agent communication protocols across core tasks like Document QA, Collaborative Coding, and MAPF, focusing on task performance, communication cost, and robustness.<br>
+      <strong>Protocol Adaptation and Meta Protocol:</strong> Contributed to adapting the ANP protocol across diverse scenarios and integrating a Meta Protocol layer that unifies multiple protocols under a shared interface.<br>
+      <strong>Fail-Storm Recovery and System Monitoring:</strong> Implemented failure recovery experiments in the Shard QA scenario and integrated Prometheus + OTLP for monitoring token-level cost, GPU usage, and recovery metrics.<br>
+      Supervised by <span class="fw-semibold text-dark">Prof. Jiaxuan You</span>. <a href="https://arxiv.org/pdf/2510.17149" target="_blank" class="text-decoration-none">[Paper]</a>
+    </div>
+  </div>
+
+  <div class="mb-3 ps-3 border-start border-3 border-primary-subtle">
+    <div class="fw-semibold text-dark" style="font-size: 1.1rem; margin-bottom: 6px;">
+      <img src="src/uchicago.png" alt="UChicago Logo" style="width: 24px; height: 24px; margin-right: 8px; vertical-align: middle;">
+      University of Chicago (Globus Lab)
+      <span class="text-secondary" style="font-size: 0.95rem;">| Jun 2024 – Aug 2024</span>
+    </div>
+    <div>
+      <strong>Automated Deployment for Science Models:</strong> Implemented a pipeline to deploy AI/ML models on the Garden platform, integrating Delta HPC for real-time inference with GPU support.<br>
+      Supervised by <span class="fw-semibold text-dark">Dr. Eliu A. Huerta</span>.
+    </div>
+  </div>
+
+  <div class="mb-3 ps-3 border-start border-3 border-primary-subtle">
+    <div class="fw-semibold text-dark" style="font-size: 1.1rem; margin-bottom: 6px;">
+      <img src="src/tsinghua.svg" alt="Tsinghua Logo" style="width: 24px; height: 24px; margin-right: 8px; vertical-align: middle;">
+      Tsinghua University
+      <span class="text-secondary" style="font-size: 0.95rem;">| Jan 2020 – Apr 2021</span>
+    </div>
+    <div>
+      <strong>Non-contact HRV Monitoring:</strong> Developed a non-contact heart rate variability (HRV) monitoring algorithm using computer vision and signal processing. Applied OpenCV to extract cheek regions, enhanced subtle color changes via <strong>Eulerian Video Magnification (EVM)</strong>, and designed noise reduction methods for low-light and motion robustness. Extracted HRV features using remote photoplethysmography (rPPG). Improved accuracy by 12% under motion conditions.<br>
+      Supervised by <span class="fw-semibold text-dark">Prof. Yongqiang Lyu</span>.
+    </div>
+  </div>
+</div>
+
+
+        <div class="mb-2">
+          <h2 class="h4 border-bottom pb-2 mb-3">Education</h2>
+          <div class="mb-2">
+            <img src="src/uiuc.png" alt="UIUC Logo" style="width: 24px; height: 24px; margin-right: 8px; vertical-align: middle;">
+            <span class="fw-semibold text-dark">University of Illinois Urbana-Champaign (UIUC)</span><br>
+            <span style="margin-left: 32px;">B.S. in Mathematics + Computer Science, GPA: 3.97/4.0</span><br>
+            <span style="margin-left: 32px;">Aug 2023 – May 2026</span>
+          </div>
+          <div>
+            <img src="src/hust.png" alt="HUST Logo" style="width: 24px; height: 24px; margin-right: 8px; vertical-align: middle;">
+            <span class="fw-semibold text-dark">Huazhong University of Science and Technology (HUST)</span><br>
+            <span style="margin-left: 32px;">B.S. in Computer Science (Transferred)</span><br>
+            <span style="margin-left: 32px;">Sep 2021 – Jan 2023</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  
+  
+</body>
+</html>
