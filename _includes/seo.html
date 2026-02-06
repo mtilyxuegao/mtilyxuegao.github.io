@@ -18,7 +18,7 @@
   {% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}
 {% endif %}
 
-<title>{% if page.url == "/" %}{{ site.title }} | AI Researcher{% else %}{{ seo_title | default: site.title }}{% if paginator %}{% unless paginator.page == 1 %} {{ site.title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}{% endif %}</title>
+<title>{% if page.url == "/" %}{{ site.title }} | Personal Website{% else %}{{ seo_title | default: site.title }}{% if paginator %}{% unless paginator.page == 1 %} {{ site.title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}{% endif %}</title>
 
 {% assign seo_description = page.description | default: page.excerpt | default: site.description %}
 {% if seo_description %}
@@ -93,7 +93,12 @@
       "@type" : "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
       "name" : "{{ site.social.name | default: site.name }}",
       "url" : {{ seo_url | jsonify }},
-      "sameAs" : {{ site.social.links | jsonify }}
+      "sameAs" : {{ site.social.links | jsonify }},
+      "jobTitle": "Student",
+      "affiliation": {
+        "@type": "EducationalOrganization",
+        "name": "University of Illinois Urbana-Champaign"
+      }
     }
   </script>
 {% endif %}
