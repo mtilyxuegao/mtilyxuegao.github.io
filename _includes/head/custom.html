@@ -5,8 +5,25 @@
 <!-- Support for Academicons -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
+<!-- Force light theme -->
+<script>
+  // Force light theme on page load
+  document.documentElement.setAttribute('data-theme', 'light');
+
+  // Override any theme switching
+  if (typeof Storage !== 'undefined') {
+    localStorage.setItem('theme', 'light');
+  }
+</script>
+
 <!-- Minimal custom CSS -->
 <style>
+  /* Force light theme always */
+  html[data-theme="dark"],
+  html[data-theme="auto"] {
+    color-scheme: light !important;
+  }
+
   /* Hide theme toggle button */
   .theme-toggle {
     display: none !important;
