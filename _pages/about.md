@@ -8,92 +8,79 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I'm **Jisen Li**, an undergraduate student majoring in Mathematics and Computer Science at the **University of Illinois Urbana-Champaign (UIUC)**, graduating in May 2026. My research interests focus on **reasoning, retrieval and ranking, and artificial intelligence agents**. Currently, I am a **Research Intern at Together AI**, working on Speculative Decoding/Quantization.
+Hello! I'm **Jisen Li**, an undergraduate student majoring in Mathematics and Computer Science at the **University of Illinois Urbana-Champaign (UIUC)**, graduating in May 2026. My research interests focus on **inference, retrieval and ranking, and AI Agents**. Currently, I am a **Research Intern at Together AI**, working on Speculative Decoding/Quantization.
 
 In the **industry**, I have interned at **Nexa AI**, researching on-device models and AI agents; at **Snowflake**, working on embedded search models and hybrid retrieval systems; and at **TikTok**, developing multimodal recommendation models.
 
-In **academic research**, I have worked at **UIUC's U Lab** researching AI agent communication protocols and multi-agent benchmarking; at the **University of Chicago** researching AI deployment; and at **Tsinghua University** researching computer vision for healthcare.
+In **academic research**, I have worked at **UIUC U-Lab** researching AI agent communication protocols and multi-agent benchmarking; at the **University of Chicago** researching AI deployment; and at **Tsinghua University** researching computer vision for healthcare.
 
 In my free time, I enjoy **fitness, playing billiards**, and playing **Go and Texas Hold'em poker**. Please feel free to contact me—I would be happy to connect with you!
 
+## News
+
+- **[Jan 2026]** Joined Together AI as Research Intern
+- **[Nov 2025]** K2V2 paper accepted to MLSys 2026
+- **[Oct 2025]** AI Agent Protocol Benchmark paper released on arXiv
+
 ## Research Interests
 
-- **Inference:** Speculative Decoding, KV Cache Quantization, and efficient model serving for production deployment.
-- **LLM Fine-tuning:** Instruction tuning, contrastive learning, CoT, and RLHF for model adaptation and alignment.
-- **Multimodal:** Vision-text models and cross-modal alignment using frozen LLMs for multimodal understanding.
-- **Agentic AI:** Agents with memory, planning, and decision-making for complex tasks and multi-agent collaboration.
+- **Inference:** Speculative Decoding, KV Cache Quantization, and efficient model serving.
+- **LLM Fine-tuning:** Instruction tuning, contrastive learning, CoT, and RLHF for alignment.
+- **Multimodal:** Vision-text models and cross-modal alignment using frozen LLMs.
+- **Agentic AI:** Agents with memory, planning, and decision-making for collaboration.
 
 ## Industry Experience
 
-### ![Together AI](../images/together.png){: width="24px"} Together AI – Research Intern
-*Jan 2026 – Present*
+### ![Together AI](../images/together.png){: width="24px"} Together AI – Research Intern <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jan 2026 – Present*</span>
 
-**Speculative Decoding ([Aurora](https://aurora-spec-ai.github.io/)):** Developed a unified training-serving system that continuously learns speculators from live inference traces using RL. Supports day-0 deployment, achieving 1.45× speedup on frontier models (MiniMax M2.1 229B, Qwen3-Coder-Next 80B) and 1.25× additional speedup under distribution shift.
+**Speculative Decoding ([Aurora](https://aurora-spec-ai.github.io/)):** Developed a unified training-serving system that continuously learns speculators from live inference traces using RL, achieving 1.45× speedup on frontier models and 1.25× additional speedup under distribution shift.
 
-### ![Nexa AI](../images/Nexa.png){: width="24px"} Nexa AI – AI Research Engineer Intern
-*Oct 2025 – Dec 2025*
+### ![Nexa AI](../images/Nexa.png){: width="24px"} Nexa AI – AI Research Engineer Intern <span style="float: right; font-size: 0.9em; font-weight: normal;">*Oct 2025 – Dec 2025*</span>
 
-**On-Device AI Agent:** Deployed local Qwen3 VL model via Nexa SDK and LangChain, enabling tool use with Browser Use and MCP.
+**On-Device AI Agent:** Deployed local Qwen3 VL model via Nexa SDK for on-device agent with tool use, and contributed to **nexa-sdk** for efficient NPU-based inference.
 
-**SDK Development:** Contributed to **nexa-sdk** for efficient NPU-based inference and cross-platform deployment.
+### ![Bluelet](../images/bluelet.png){: width="24px"} Bluelet.ai – Search Tech Lead and Founding MLE <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jun 2025 – Oct 2025*</span>
 
-### ![Bluelet](../images/bluelet.png){: width="24px"} Bluelet.ai – Search Tech Lead and Founding MLE
-*Jun 2025 – Oct 2025*
+**Recruiting AI Agent:** Autonomously finds, matches, and engages world-class talent.
 
-**Recruiting AI Agent:** Autonomously finds, matches, and engages world-class talent—before anyone else does.
+### ![Snowflake](../images/snow.png){: width="24px"} Snowflake – Software Engineer Intern (AI/ML) <span style="float: right; font-size: 0.9em; font-weight: normal;">*May 2025 – Aug 2025*</span>
 
-### ![Snowflake](../images/snow.png){: width="24px"} Snowflake – Software Engineer Intern (AI/ML)
-*May 2025 – Aug 2025*
+**Cortex Search:** Fine-tuned Arctic embed v2.0 for semantic retrieval using contrastive learning and CoT-generated queries, improving nDCG by 15%, and developed a Gaussian Process Optimization system for auto-tuning hybrid search parameters deployed to Global Service.
 
-**Cortex Search:** Fine-tuned the Arctic embed v2.0 model for semantic retrieval using **contrastive learning**, **consistency filtering**, and **CoT-generated queries**. Constructed hard negatives with BM25, built an **LLM eval framework**, and improved nDCG by 15%.
+### ![TikTok](../images/tiktok.png){: width="24px"} TikTok – Machine Learning Engineer Intern <span style="float: right; font-size: 0.9em; font-weight: normal;">*Aug 2024 – Dec 2024*</span>
 
-Additionally, developed a **Gaussian Process Optimization** (GPO) system for auto-tuning hybrid search parameters, optimizing Recall@K and sDCG across retrieval and reranking stages. Final config deployed to **Global Service**.
-
-### ![TikTok](../images/tiktok.png){: width="24px"} TikTok – Machine Learning Engineer Intern
-*Aug 2024 – Dec 2024*
-
-**Multimodal Recommendation:** Developed **Rec_Qwen** model based on Qwen2.5-0.5B/7B for multimodal next-item recommendation. Designed a **LLaVA-inspired architecture** with an MLP projector to align user profiles and content embeddings under a frozen LLM backbone. Fine-tuned with **prompt engineering**, improved output structure and loss, and achieved a **28% CTR accuracy gain** in real-world ad recommendation settings.
+**Multimodal Recommendation:** Developed **Rec-Qwen** model based on Qwen2.5-0.5B/7B with a LLaVA-inspired architecture to align user profiles and content embeddings under a frozen LLM backbone, achieving a 28% CTR accuracy gain in ad recommendation.
 
 ## Academic Research
 
-### ![Together AI](../images/together.png){: width="24px"} Together.ai
-*Sep 2025 – Present*
+### ![Together AI](../images/together.png){: width="24px"} Together.ai <span style="float: right; font-size: 0.9em; font-weight: normal;">*Sep 2025 – Present*</span>
 
 **KV Cache Quantization:** Built upon the K2V2 quantization strategy, combining sink32 and 25% K-channel precision boost to recover accuracy close to FP16; implemented evaluation pipelines with vLLM and SGLang.
 
 **Outcome:** Core Contributor, MLSys 2026. Supervised by **Dr. Shirley Wu**. [[Paper]](https://arxiv.org/pdf/2511.18643)
 
-### ![UIUC](../images/uiuc.png){: width="24px"} University of Illinois Urbana-Champaign
-*Jul 2025 – Present*
+### ![UIUC](../images/uiuc.png){: width="24px"} University of Illinois Urbana-Champaign <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jul 2025 – Present*</span>
 
-**AI Agent Protocol Benchmarking:** Developing a unified benchmark to evaluate AI agent communication protocols across core tasks like Document QA, Collaborative Coding, and MAPF, focusing on task performance, communication cost, and robustness.
+**AI Agent Protocol Benchmarking:** Developed a unified benchmark to evaluate agent communication protocols across Document QA, Collaborative Coding, and MAPF. Contributed to ANP protocol adaptation and Meta Protocol integration.
 
-**Protocol Adaptation and Meta Protocol:** Contributed to adapting the ANP protocol across diverse scenarios and integrating a Meta Protocol layer that unifies multiple protocols under a shared interface.
+**Outcome:** Co-First Author, ICML Under Review [[Paper]](https://arxiv.org/pdf/2510.17149)
 
-**Fail-Storm Recovery and System Monitoring:** Implemented failure recovery experiments in the Shard QA scenario and integrated Prometheus + OTLP for monitoring token-level cost, GPU usage, and recovery metrics.
-
-Supervised by **Prof. Jiaxuan You**. [[Paper]](https://arxiv.org/pdf/2510.17149)
-
-### ![UChicago](../images/uchicago.png){: width="24px"} University of Chicago (Globus Lab)
-*Jun 2024 – Aug 2024*
+### ![UChicago](../images/uchicago.png){: width="24px"} University of Chicago (Globus Lab) <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jun 2024 – Aug 2024*</span>
 
 **Automated Deployment for Science Models:** Implemented a pipeline to deploy AI/ML models on the Garden platform, integrating Delta HPC for real-time inference with GPU support.
 
 Supervised by **Dr. Eliu A. Huerta**.
 
-### ![Tsinghua](../images/tsinghua.svg){: width="24px"} Tsinghua University
-*Jan 2020 – Apr 2021*
+### ![Tsinghua](../images/tsinghua.svg){: width="24px"} Tsinghua University <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jan 2020 – Apr 2021*</span>
 
-**Non-contact HRV Monitoring:** Developed a non-contact heart rate variability (HRV) monitoring algorithm using computer vision and signal processing. Applied OpenCV to extract cheek regions, enhanced subtle color changes via **Eulerian Video Magnification (EVM)**, and designed noise reduction methods for low-light and motion robustness. Extracted HRV features using remote photoplethysmography (rPPG). Improved accuracy by 12% under motion conditions.
+**Non-contact HRV Monitoring:** Developed a non-contact HRV monitoring algorithm using computer vision and Eulerian Video Magnification, improving accuracy by 12%.
 
 Supervised by **Prof. Yongqiang Lyu**.
 
 ## Education
 
-**![UIUC](../images/uiuc.png){: width="24px"} University of Illinois Urbana-Champaign (UIUC)**
+**![UIUC](../images/uiuc.png){: width="24px"} University of Illinois Urbana-Champaign (UIUC)** <span style="float: right; font-size: 0.9em; font-weight: normal;">*Aug 2023 – May 2026*</span><br>
 B.S. in Mathematics + Computer Science, GPA: 3.97/4.0
-*Aug 2023 – May 2026*
 
-**![HUST](../images/hust.png){: width="24px"} Huazhong University of Science and Technology (HUST)**
+**![HUST](../images/hust.png){: width="24px"} Huazhong University of Science and Technology (HUST)** <span style="float: right; font-size: 0.9em; font-weight: normal;">*Sep 2021 – Jan 2023*</span><br>
 B.S. in Computer Science (Transferred)
-*Sep 2021 – Jan 2023*

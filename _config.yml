@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "air" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Jisen Li"
 title_separator          : "-"
 name                     : &name "Jisen Li"
@@ -25,9 +25,9 @@ author:
   avatar           : "profile.jpg"
   name             : "Jisen Li"
   pronouns         : # example: "she/her"
-  bio              : "Math & CS @ UIUC | Research in AI reasoning, retrieval, and agents"
-  location         : "Urbana-Champaign, IL"
-  employer         : "Together AI"
+  bio              : "Math & CS @UIUC<br>Research Intern @Together AI"
+  location         : "Champaign, IL"
+  employer         : "UIUC"
   uri              : # URL
   email            : "jisenli2@illinois.edu" 
 

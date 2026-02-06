@@ -5,6 +5,63 @@
 <!-- Support for Academicons -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
+<!-- Custom CSS for pure white background and disable dark mode -->
+<style>
+  /* Force light mode only */
+  body {
+    background-color: #ffffff !important;
+    background-image: none !important;
+    color: #000000 !important;
+  }
+  .page {
+    background-color: #ffffff !important;
+  }
+
+  /* Hide theme toggle button */
+  .theme-toggle {
+    display: none !important;
+  }
+
+  /* Force all text to black */
+  body, p, h1, h2, h3, h4, h5, h6, a, span, div, li {
+    color: #000000 !important;
+  }
+
+  /* Ensure links are visible */
+  a {
+    color: #0000EE !important;
+  }
+
+  a:visited {
+    color: #551A8B !important;
+  }
+
+  /* Reduce spacing between Industry Experience items */
+  .page__content h3 {
+    margin-top: 1em !important;
+    margin-bottom: 0.5em !important;
+  }
+
+  /* Reduce spacing within Academic Research projects - but not in intro paragraphs */
+  .page__content h2:not(:first-of-type) ~ h3 + p,
+  .page__content h2:not(:first-of-type) ~ p + p {
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+  }
+
+  /* Keep normal spacing for About Me intro paragraphs */
+  .page__content > p {
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+  }
+
+  /* Remove horizontal lines under section headers */
+  .page__content h2 {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+  }
+</style>
+
 <!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png"/>
 <link rel="icon" type="image/svg+xml" href="{{ base_path }}/images/favicon.svg"/>
