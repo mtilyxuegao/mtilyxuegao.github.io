@@ -5,35 +5,17 @@
 <!-- Support for Academicons -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
-<!-- Custom CSS for pure white background and disable dark mode -->
+<!-- Custom CSS for minimal styling adjustments -->
 <style>
-  /* Force light mode only */
+  /* Pure white background */
   body {
     background-color: #ffffff !important;
     background-image: none !important;
-    color: #000000 !important;
-  }
-  .page {
-    background-color: #ffffff !important;
   }
 
   /* Hide theme toggle button */
   .theme-toggle {
     display: none !important;
-  }
-
-  /* Force all text to black */
-  body, p, h1, h2, h3, h4, h5, h6, a, span, div, li {
-    color: #000000 !important;
-  }
-
-  /* Ensure links are visible */
-  a {
-    color: #0000EE !important;
-  }
-
-  a:visited {
-    color: #551A8B !important;
   }
 
   /* Reduce spacing between Industry Experience items */
@@ -42,17 +24,11 @@
     margin-bottom: 0.5em !important;
   }
 
-  /* Reduce spacing within Academic Research projects - but not in intro paragraphs */
+  /* Reduce spacing within Academic Research projects */
   .page__content h2:not(:first-of-type) ~ h3 + p,
   .page__content h2:not(:first-of-type) ~ p + p {
     margin-top: 0.3em !important;
     margin-bottom: 0.3em !important;
-  }
-
-  /* Keep normal spacing for About Me intro paragraphs */
-  .page__content > p {
-    margin-top: 1em !important;
-    margin-bottom: 1em !important;
   }
 
   /* Remove horizontal lines under section headers */
