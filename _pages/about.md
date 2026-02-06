@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I'm **Jisen Li**, an undergraduate student majoring in Mathematics and Computer Science at the **University of Illinois Urbana-Champaign (UIUC)**, graduating in May 2026. My research interests focus on **inference, retrieval and ranking, and AI Agents**. Currently, I am a **Research Intern at Together AI**, working on Speculative Decoding/Quantization.
+Hello! I'm **Jisen Li**, an undergraduate student majoring in Mathematics and Computer Science at the **University of Illinois Urbana-Champaign (UIUC)**, graduating in May 2026. My research interests focus on **inference, retrieval and ranking, and AI agents**. Currently, I am a **Research Intern at Together AI**, working on Speculative Decoding/Quantization.
 
 In the **industry**, I have interned at **Nexa AI**, researching on-device models and AI agents; at **Snowflake**, working on embedded search models and hybrid retrieval systems; and at **TikTok**, developing multimodal recommendation models.
 
@@ -18,9 +18,10 @@ In my free time, I enjoy **fitness, playing billiards**, and playing **Go and Te
 
 ## News
 
-- **[Jan 2026]** Joined Together AI as Research Intern
-- **[Nov 2025]** K2V2 paper accepted to MLSys 2026
-- **[Oct 2025]** AI Agent Protocol Benchmark paper released on arXiv
+- **[Jan 2026]** Joined Together AI as Research Intern!
+- **[Jan 2026]** Kitty paper accepted to MLSys 2026!
+- **[Jan 2026]** Our Aurora Paper submitted to ICML 2026!
+- **[Dec 2025]** Grateful for OpenAI offer, chose different path!
 
 ## Research Interests
 
@@ -53,7 +54,7 @@ In my free time, I enjoy **fitness, playing billiards**, and playing **Go and Te
 
 ## Academic Research
 
-### ![Together AI](../images/together.png){: width="24px"} Together.ai <span style="float: right; font-size: 0.9em; font-weight: normal;">*Sep 2025 – Present*</span>
+### ![Together AI](../images/together.png){: width="24px"} Together AI <span style="float: right; font-size: 0.9em; font-weight: normal;">*Sep 2025 – Present*</span>
 
 **KV Cache Quantization:** Built upon the K2V2 quantization strategy, combining sink32 and 25% K-channel precision boost to recover accuracy close to FP16; implemented evaluation pipelines with vLLM and SGLang.
 
