@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Jisen Li | AI Researcher"
+title                    : "Jisen Li"
 title_separator          : "-"
 name                     : &name "Jisen Li"
-description              : &description "Math & CS @ UIUC | Research in AI reasoning, retrieval, and agents"
+description              : &description "Math & CS @ UIUC | Research in AI inference, retrieval & ranking, and agents"
 url                      : https://jisenli.me
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "mtilyxuegao/mtilyxuegao.github.io"
