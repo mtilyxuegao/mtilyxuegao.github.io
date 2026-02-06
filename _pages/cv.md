@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * **B.S. in Mathematics + Computer Science**, University of Illinois Urbana-Champaign (UIUC), 2023-2026
-  * GPA: 3.97/4.0
+  * GPA: 3.98/4.0
 * **B.S. in Computer Science**, Huazhong University of Science and Technology (HUST), 2021-2023
   * Transferred to UIUC
 
@@ -46,9 +46,6 @@ Industry Experience
 * **Nexa AI – AI Research Engineer Intern** (Oct 2025 – Dec 2025)
   * **On-Device AI Agent:** Deployed local Qwen3 VL model via Nexa SDK and LangChain, enabling tool use with Browser Use and MCP.
   * **SDK Development:** Contributed to nexa-sdk for efficient NPU-based inference and cross-platform deployment.
-
-* **Bluelet.ai – Search Tech Lead and Founding MLE** (Jun 2025 – Oct 2025)
-  * **Recruiting AI Agent:** Autonomously finds, matches, and engages world-class talent—before anyone else does.
 
 * **Snowflake – Software Engineer Intern (AI/ML)** (May 2025 – Aug 2025)
   * **Cortex Search:** Fine-tuned the Arctic embed v2.0 model for semantic retrieval using contrastive learning, consistency filtering, and CoT-generated queries. Constructed hard negatives with BM25, built an LLM eval framework, and improved nDCG by 15%.

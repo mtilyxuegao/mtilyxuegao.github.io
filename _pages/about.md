@@ -40,10 +40,6 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 **On-Device AI Agent:** Deployed local Qwen3 VL model via Nexa SDK for on-device agent with tool use, and contributed to **nexa-sdk** for efficient NPU-based inference.
 
-### ![Bluelet](../images/bluelet.png){: width="24px"} Bluelet.ai – Search Tech Lead and Founding MLE <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jun 2025 – Oct 2025*</span>
-
-**Recruiting AI Agent:** Autonomously finds, matches, and engages world-class talent.
-
 ### ![Snowflake](../images/snow.png){: width="24px"} Snowflake – Software Engineer Intern (AI/ML) <span style="float: right; font-size: 0.9em; font-weight: normal;">*May 2025 – Aug 2025*</span>
 
 **Cortex Search:** Fine-tuned Arctic embed v2.0 for semantic retrieval using contrastive learning and CoT-generated queries, improving nDCG by 15%, and developed a Gaussian Process Optimization system for auto-tuning hybrid search parameters deployed to Global Service.
@@ -81,10 +77,9 @@ Supervised by **[Prof. Yongqiang Lyu](https://www.linkedin.com/in/yongqianglu/)*
 ## Education
 
 **![UIUC](../images/uiuc.png){: width="24px"} University of Illinois Urbana-Champaign (UIUC)** <span style="float: right; font-size: 0.9em; font-weight: normal;">*Aug 2023 – May 2026*</span><br>
-B.S. in Mathematics + Computer Science, GPA: 3.97/4.0
+B.S. in Mathematics + Computer Science, GPA: 3.98/4.0
 
-**🌱 Gap Year** <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jan 2023 – Aug 2023*</span><br>
-Explored entrepreneurial ventures focused on education equity.
+**🌱 Gap Year** <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jan 2023 – Aug 2023*</span>
 
 **![HUST](../images/hust.png){: width="24px"} Huazhong University of Science and Technology (HUST)** <span style="float: right; font-size: 0.9em; font-weight: normal;">*Sep 2021 – Jan 2023*</span><br>
 B.S. in Computer Science (Transferred)
