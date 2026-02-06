@@ -9,18 +9,52 @@
 <script>
   // Force light theme on page load
   document.documentElement.setAttribute('data-theme', 'light');
+  document.documentElement.classList.remove('dark');
+  document.documentElement.classList.add('light');
 
   // Override any theme switching
   if (typeof Storage !== 'undefined') {
     localStorage.setItem('theme', 'light');
   }
+
+  // Monitor and prevent theme changes
+  const observer = new MutationObserver(() => {
+    if (document.documentElement.getAttribute('data-theme') !== 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+    document.documentElement.classList.remove('dark');
+    document.documentElement.classList.add('light');
+  });
+
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['data-theme', 'class']
+  });
+
+  // Prevent prefers-color-scheme from affecting theme
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    document.documentElement.setAttribute('data-theme', 'light');
+  });
 </script>
 
 <!-- Minimal custom CSS -->
 <style>
-  /* Force light theme always */
+  /* Force light theme always - override prefers-color-scheme */
+  @media (prefers-color-scheme: dark) {
+    html {
+      color-scheme: light !important;
+    }
+  }
+
+  html,
   html[data-theme="dark"],
-  html[data-theme="auto"] {
+  html[data-theme="auto"],
+  html.dark {
+    color-scheme: light !important;
+  }
+
+  /* Force light theme regardless of system preference */
+  :root {
     color-scheme: light !important;
   }
 
