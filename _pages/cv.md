@@ -41,10 +41,10 @@ Research Experience
 Industry Experience
 ======
 * **Together AI – Research Intern** (Jan 2026 – Present)
-  * **Speculative Decoding ([Aurora](https://aurora-spec-ai.github.io/)):** Developed a unified training-serving system that continuously learns speculators from live inference traces using RL. Supports day-0 deployment, achieving 1.45× speedup on frontier models (MiniMax M2.1 229B, Qwen3-Coder-Next 80B) and 1.25× additional speedup under distribution shift.
+  * **Speculative Decoding ([Aurora](https://aurora-spec-ai.github.io/)):** Developed a unified training-serving system that continuously learns speculators from live inference traces using RL. Supports day-0 deployment, achieving 1.45× speedup on frontier models (MiniMax M2.1 229B, Qwen3-Coder-Next 80B) and 1.25× additional speedup under distribution shift. [Paper](https://arxiv.org/abs/2602.06932)
 
 * **Nexa AI – AI Research Engineer Intern** (Oct 2025 – Dec 2025)
-  * **On-Device AI Agent:** Deployed local Qwen3 VL model via Nexa SDK and LangChain, enabling tool use with Browser Use and MCP.
+  * **On-Device AI Agent:** Deployed local Qwen3 VL model via [Nexa SDK](https://github.com/NexaAI/nexa-sdk) and LangChain, enabling tool use with Browser Use and MCP.
   * **SDK Development:** Contributed to nexa-sdk for efficient NPU-based inference and cross-platform deployment.
 
 * **Snowflake – Software Engineer Intern (AI/ML)** (May 2025 – Aug 2025)
