@@ -18,9 +18,9 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 ## News 🎉
 
+- **[Feb 2026]** **[Aurora](https://aurora-spec-ai.github.io/)** Day Zero support for **Qwen3-Coder-Next-FP8**! [Checkpoint available](https://huggingface.co/togethercomputer/Aurora-Spec-Qwen3-Coder-Next-FP8).
 - **[Jan 2026]** Joined Together AI as **Research Intern**!
 - **[Jan 2026]** [Kitty paper](https://arxiv.org/pdf/2511.18643) accepted to **MLSys 2026**!
-- **[Jan 2026]** Our [Aurora](https://aurora-spec-ai.github.io/) Paper submitted to ICML 2026!
 - **[Dec 2025]** Grateful for **OpenAI** offer, **but** chose different path!
 
 ## Research Interests
@@ -34,11 +34,11 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 ### ![Together AI](../images/together.png){: width="24px"} Together AI – Research Intern <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jan 2026 – Present*</span>
 
-**Speculative Decoding ([Aurora](https://aurora-spec-ai.github.io/)):** Developed a unified training-serving system that continuously learns speculators from live inference traces, achieving 1.45× speedup on frontier models and 1.25× additional speedup under distribution shift. [[Paper]](https://arxiv.org/abs/2602.06932)
+**Speculative Decoding ([Aurora](https://aurora-spec-ai.github.io/)):** Developed a unified training-serving system that continuously learns speculators from live inference traces, achieving 1.45× speedup on frontier models and 1.25× additional speedup under distribution shift. [Paper](https://arxiv.org/abs/2602.06932)
 
 ### ![Nexa AI](../images/Nexa.png){: width="24px"} Nexa AI – AI Research Engineer Intern <span style="float: right; font-size: 0.9em; font-weight: normal;">*Oct 2025 – Dec 2025*</span>
 
-**On-Device AI Agent:** Deployed local Qwen3 VL model via Nexa SDK for on-device agent with tool use, and contributed to **nexa-sdk** for efficient NPU-based inference.
+**On-Device AI Agent:** Deployed local Qwen3 VL model via [Nexa SDK](https://github.com/NexaAI/nexa-sdk) for on-device agent with tool use, and contributed to **[nexa-sdk](https://github.com/NexaAI/nexa-sdk)** for efficient NPU-based inference.
 
 ### ![Bluelet](../images/bluelet.png){: width="24px"} Bluelet.ai – Search Tech Lead and Founding MLE <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jun 2025 – Oct 2025*</span>
 
