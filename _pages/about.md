@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I am **Jisen Li**, an undergraduate student majoring in Mathematics and Computer Science at the **University of Illinois Urbana-Champaign (UIUC)**, graduating in May 2026. My research interests focus on **inference, retrieval and ranking, and AI agents**. I am currently a Research Intern at **Together AI**, working on speculative decoding and model quantization under the supervision of **[Dr. Shirley Wu](https://xwushirley.github.io/)** and **[Prof. Shuaiwen Leon Song](https://www.linkedin.com/in/leon-song-1a663019/)**.
+Hello! I am **Jisen Li**, an **Incoming AI Researcher at [Together AI](https://www.together.ai/)**. I recently graduated with a B.S. in Mathematics and Computer Science from the **University of Illinois Urbana-Champaign (UIUC)**. My research interests focus on **inference, retrieval and ranking, and AI agents**. At **Together AI**, I work on speculative decoding, quantization and agents in collaboration with **[Dr. Shirley Wu](https://xwushirley.github.io/)** and **[Dr. Ben Athiwaratkun](https://benathi.github.io/)**.
 
-In industry research, I have interned at **Nexa AI**, where I worked on on-device models and AI agents; at **Snowflake**, focusing on embedded search models and hybrid retrieval systems; and at **TikTok**, where I developed multimodal recommendation models.
+In industry experience, I have interned at **Nexa AI**, where I worked on on-device models and AI agents; at **Snowflake**, focusing on embedded search models and hybrid retrieval systems; and at **TikTok**, where I developed multimodal recommendation models.
 
 In academic research, I have worked at **[UIUC U-Lab](https://ulab-uiuc.github.io/)** under the supervision of **[Prof. Jiaxuan You](https://cs.stanford.edu/people/jiaxuan/)**, researching AI agent communication protocols and multi-agent benchmarking. I have also conducted research at the **University of Chicago** under the supervision of **[Dr. Eliu A. Huerta](https://scholar.google.com/citations?user=CZQuCS0AAAAJ&hl=en)**, focusing on AI deployment, and at **Tsinghua University** under the guidance of **[Prof. Yongqiang Lyu](https://www.linkedin.com/in/yongqianglu/)**, focusing on computer vision and digital signal processing.
 
@@ -18,6 +18,8 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 ## News 🎉
 
+- **[May 2026]** Graduated from **UIUC** 🎓!
+- **[April 2026]** **[Aurora](https://aurora-spec-ai.github.io/)** and **[Agent Protocol](https://arxiv.org/pdf/2510.17149)** papers accepted to **ICML 2026** 🎉!
 - **[Feb 2026]** **[Aurora](https://aurora-spec-ai.github.io/)** Day Zero support for **Qwen3-Coder-Next-FP8**! [[Checkpoint]](https://huggingface.co/togethercomputer/Aurora-Spec-Qwen3-Coder-Next-FP8).
 - **[Jan 2026]** Joined Together AI as **Research Intern**!
 - **[Jan 2026]** [Kitty paper](https://arxiv.org/pdf/2511.18643) accepted to **MLSys 2026**!
@@ -32,9 +34,13 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 ## Industry Experience
 
-### ![Together AI](../images/together.png){: width="24px"} Together AI – Research Intern <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jan 2026 – Present*</span>
+### ![Together AI](../images/together.png){: width="24px"} Together AI – Research Intern <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jan 2026 – May 2026*</span>
 
-**Speculative Decoding ([Aurora](https://aurora-spec-ai.github.io/)):** Developed a unified training-serving system that continuously learns speculators from live inference traces, achieving 1.45× speedup on frontier models and 1.25× additional speedup under distribution shift. [[Paper]](https://arxiv.org/abs/2602.06932)
+**Speculative Decoding ([Aurora](https://aurora-spec-ai.github.io/)):** Developed a unified training-serving system that continuously learns speculators from live inference traces, achieving 1.45× speedup on frontier models and 1.25× additional speedup under distribution shift. **Accepted to ICML 2026.** [[Paper]](https://arxiv.org/abs/2602.06932)
+
+**KV-Cache Quantization (SAW-INT4):** System-aware 4-bit KV-cache quantization—token-wise INT4 with block-diagonal Hadamard rotation—achieving near-lossless accuracy with zero serving overhead. **Under review at COLM 2026.** [[Paper]](https://arxiv.org/pdf/2604.19157)
+
+**KV-Cache Quantization (OSCAR):** Offline covariance-aware rotation for 2-bit KV-cache quantization with a custom INT2 attention kernel, achieving ~8× memory reduction and up to 7× throughput. **Under review at NeurIPS 2026.** [[Paper]](https://arxiv.org/pdf/2605.17757) [[Code]](https://github.com/FutureMLS-Lab/OSCAR)
 
 ### ![Nexa AI](../images/Nexa.png){: width="24px"} Nexa AI – AI Research Engineer Intern <span style="float: right; font-size: 0.9em; font-weight: normal;">*Oct 2025 – Dec 2025*</span>
 
@@ -60,7 +66,7 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 **AI Agent Protocol Benchmarking:** Developed a unified benchmark to evaluate agent communication protocols across Document QA, Collaborative Coding, and MAPF. Contributed to ANP protocol adaptation and Meta Protocol integration.
 
-**Outcome:** Co-First Author, ICML 2026 Under Review. Supervised by **[Prof. Jiaxuan You](https://cs.stanford.edu/people/jiaxuan/)** [[Paper]](https://arxiv.org/pdf/2510.17149)
+**Outcome:** Co-First Author, Accepted to ICML 2026. Supervised by **[Prof. Jiaxuan You](https://cs.stanford.edu/people/jiaxuan/)** [[Paper]](https://arxiv.org/pdf/2510.17149)
 
 ### ![UChicago](../images/uchicago.png){: width="24px"} University of Chicago (Globus Lab) <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jun 2024 – Aug 2024*</span>
 
