@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I am **Jisen Li**, an **Incoming AI Researcher at [Together AI](https://www.together.ai/)**. I recently graduated with a B.S. in Mathematics and Computer Science from the **University of Illinois Urbana-Champaign (UIUC)**. My research interests focus on **inference, retrieval and ranking, and AI agents**. At **Together AI**, I work on speculative decoding, quantization and agents in collaboration with **[Dr. Shirley Wu](https://xwushirley.github.io/)** and **[Dr. Ben Athiwaratkun](https://benathi.github.io/)**.
+Hello! I am **Jisen Li**, an **Incoming AI Researcher at [Together AI](https://www.together.ai/)**. I recently graduated with a B.S. in Mathematics and Computer Science from the **University of Illinois Urbana-Champaign (UIUC)**. My research interests focus on **inference, AI agents, and retrieval and ranking**. At **Together AI**, I work on speculative decoding, quantization and agents in collaboration with **[Dr. Shirley Wu](https://xwushirley.github.io/)** and **[Dr. Ben Athiwaratkun](https://benathi.github.io/)**.
 
 In industry experience, I have interned at **Nexa AI**, where I worked on on-device models and AI agents; at **Snowflake**, focusing on embedded search models and hybrid retrieval systems; and at **TikTok**, where I developed multimodal recommendation models.
 
@@ -28,9 +28,9 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 ## Research Interests
 
 - **Inference:** Speculative Decoding, KV Cache Quantization, and efficient model serving.
+- **Agentic AI:** Agents with memory, planning, and decision-making for collaboration.
 - **LLM Fine-tuning:** Instruction tuning, contrastive learning, CoT, and RLHF for alignment.
 - **Multimodal:** Vision-text models and cross-modal alignment using frozen LLMs.
-- **Agentic AI:** Agents with memory, planning, and decision-making for collaboration.
 
 ## Industry Experience
 
@@ -38,9 +38,9 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 **Speculative Decoding ([Aurora](https://aurora-spec-ai.github.io/)):** Developed a unified training-serving system that continuously learns speculators from live inference traces, achieving 1.45× speedup on frontier models and 1.25× additional speedup under distribution shift. **Accepted to ICML 2026.** [[Paper]](https://arxiv.org/abs/2602.06932)
 
-**KV-Cache Quantization (SAW-INT4):** System-aware 4-bit KV-cache quantization—token-wise INT4 with block-diagonal Hadamard rotation—achieving near-lossless accuracy with zero serving overhead. **Under review at COLM 2026.** [[Paper]](https://arxiv.org/pdf/2604.19157)
+**KV-Cache Quantization (SAW-INT4):** System-aware 4-bit KV-cache quantization—token-wise INT4 with block-diagonal Hadamard rotation—achieving near-lossless accuracy with zero serving overhead. **Co-First Author, under review at COLM 2026.** [[Paper]](https://arxiv.org/pdf/2604.19157) [[Code]](https://github.com/togethercomputer/saw-int4)
 
-**KV-Cache Quantization (OSCAR):** Offline covariance-aware rotation for 2-bit KV-cache quantization with a custom INT2 attention kernel, achieving ~8× memory reduction and up to 7× throughput. **Under review at NeurIPS 2026.** [[Paper]](https://arxiv.org/pdf/2605.17757) [[Code]](https://github.com/FutureMLS-Lab/OSCAR)
+**KV-Cache Quantization ([OSCAR](https://oscar-quantize.github.io/)):** Offline covariance-aware rotation for 2-bit KV-cache quantization with a custom INT2 attention kernel, achieving ~8× memory reduction and up to 7× throughput. **Under review at NeurIPS 2026.** [[Paper]](https://arxiv.org/pdf/2605.17757) [[Code]](https://github.com/FutureMLS-Lab/OSCAR)
 
 ### ![Nexa AI](../images/Nexa.png){: width="24px"} Nexa AI – AI Research Engineer Intern <span style="float: right; font-size: 0.9em; font-weight: normal;">*Oct 2025 – Dec 2025*</span>
 
