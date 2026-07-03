@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I am **Jisen Li**, an **Incoming AI Researcher at [Together AI](https://www.together.ai/)**. I recently graduated with a B.S. in Mathematics and Computer Science from the **University of Illinois Urbana-Champaign (UIUC)**. My research interests focus on **inference, AI agents, and retrieval and ranking**. At **Together AI**, I work on speculative decoding, quantization and agents in collaboration with **[Dr. Shirley Wu](https://xwushirley.github.io/)** and **[Dr. Ben Athiwaratkun](https://benathi.github.io/)**.
+Hello! I am **Jisen Li**. I recently graduated with a B.S. in Mathematics and Computer Science from the **University of Illinois Urbana-Champaign (UIUC)**. My research interests focus on **inference, AI agents, and retrieval and ranking**. At **Together AI**, I work on speculative decoding, quantization and agents in collaboration with **[Dr. Shirley Wu](https://xwushirley.github.io/)** and **[Dr. Ben Athiwaratkun](https://benathi.github.io/)**.
 
 In industry experience, I have interned at **Nexa AI**, where I worked on on-device models and AI agents; at **Snowflake**, focusing on embedded search models and hybrid retrieval systems; and at **TikTok**, where I developed multimodal recommendation models.
 
@@ -18,12 +18,30 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 ## News 🎉
 
-- **[May 2026]** Graduated from **UIUC** 🎓!
+<div class="news-feed" markdown="1">
+
+- **[July 2026]** Released **[PaperPilot](https://paperpilot.papersearch.org/)**: Multi-Turn Agentic Scientific Literature Search via Workflow Induction! [[Paper]](https://arxiv.org/abs/2607.00597)
+- **[May 2026]** Graduated from **UIUC** 🎓, *Magna Cum Laude*!
 - **[April 2026]** **[Aurora](https://aurora-spec-ai.github.io/)** and **[Agent Protocol](https://arxiv.org/pdf/2510.17149)** papers accepted to **ICML 2026** 🎉!
 - **[Feb 2026]** **[Aurora](https://aurora-spec-ai.github.io/)** Day Zero support for **Qwen3-Coder-Next-FP8**! [[Checkpoint]](https://huggingface.co/togethercomputer/Aurora-Spec-Qwen3-Coder-Next-FP8).
 - **[Jan 2026]** Joined Together AI as **Research Intern**!
 - **[Jan 2026]** [Kitty paper](https://arxiv.org/pdf/2511.18643) accepted to **MLSys 2026**!
 - **[Dec 2025]** Grateful for **OpenAI** offer, **but** chose different path!
+
+</div>
+
+<style>
+.news-feed {
+  max-height: 12em;
+  overflow-y: auto;
+  padding-right: 0.6em;
+  margin-bottom: 1em;
+  -webkit-overflow-scrolling: touch;
+}
+.news-feed::-webkit-scrollbar { width: 6px; }
+.news-feed::-webkit-scrollbar-thumb { background: rgba(128,128,128,0.45); border-radius: 3px; }
+.news-feed::-webkit-scrollbar-track { background: transparent; }
+</style>
 
 ## Research Interests
 
@@ -40,7 +58,7 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 **KV-Cache Quantization (SAW-INT4):** System-aware 4-bit KV-cache quantization—token-wise INT4 with block-diagonal Hadamard rotation—achieving near-lossless accuracy with zero serving overhead. **Co-First Author, under review at COLM 2026.** [[Paper]](https://arxiv.org/pdf/2604.19157) [[Code]](https://github.com/togethercomputer/saw-int4)
 
-**KV-Cache Quantization ([OSCAR](https://oscar-quantize.github.io/)):** Offline covariance-aware rotation for 2-bit KV-cache quantization with a custom INT2 attention kernel, achieving ~8× memory reduction and up to 7× throughput. **Under review at NeurIPS 2026.** [[Paper]](https://arxiv.org/pdf/2605.17757) [[Code]](https://github.com/FutureMLS-Lab/OSCAR)
+**KV-Cache Quantization ([OSCAR](https://oscar-quantize.github.io/)):** Offline covariance-aware rotation for 2-bit KV-cache quantization with a custom INT2 attention kernel, achieving ~8× memory reduction and up to 7× throughput. [[Paper]](https://arxiv.org/pdf/2605.17757) [[Code]](https://github.com/FutureMLS-Lab/OSCAR)
 
 ### ![Nexa AI](../images/Nexa.png){: width="24px"} Nexa AI – AI Research Engineer Intern <span style="float: right; font-size: 0.9em; font-weight: normal;">*Oct 2025 – Dec 2025*</span>
 
@@ -63,6 +81,8 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 **Outcome:** Core Contributor, MLSys 2026. Supervised by **[Dr. Shirley Wu](https://xwushirley.github.io/)**. [[Paper]](https://arxiv.org/pdf/2511.18643) [[Code]](https://github.com/Summer-Summer/Kitty)
 
 ### ![UIUC](../images/uiuc.png){: width="24px"} University of Illinois Urbana-Champaign <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jul 2025 – Present*</span>
+
+**Scientific Literature Search Agent ([PaperPilot](https://paperpilot.papersearch.org/)):** A multi-turn agent that induces executable DAG workflows over paper-search tools; a 9B workflow-induction model improves Hit@5 from 58.0 to 77.0 and cuts workflow errors from 9.5% to 0%. [[Paper]](https://arxiv.org/abs/2607.00597)
 
 **AI Agent Protocol Benchmarking:** Developed a unified benchmark to evaluate agent communication protocols across Document QA, Collaborative Coding, and MAPF. Contributed to ANP protocol adaptation and Meta Protocol integration.
 
