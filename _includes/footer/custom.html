@@ -1,6 +1,51 @@
 <!-- start custom footer snippets -->
 
-<a href="/sitemap/">Sitemap</a>
+<style>
+  .page__footer footer { position: relative; }
+  /* Visitor block is absolutely positioned so it does NOT add to the footer's
+     flow height — the theme's sticky-footer measures footer height on load and
+     would otherwise overlap the content above (Education) when the map grows. */
+  .footer-visitors {
+    position: absolute;
+    right: 0;
+    bottom: 0.6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    z-index: 2;
+  }
+  .footer-hits { display: block; height: 20px; width: auto; }
+  .visitor-map { width: 150px; height: 95px; overflow: hidden; border-radius: 6px; line-height: 0; }
+  .visitor-map img, .visitor-map canvas, .visitor-map svg { max-width: 100%; height: auto; display: block; }
+  @media (max-width: 600px) {
+    .footer-visitors { position: static; align-items: center; margin: 0.75rem auto 0; }
+  }
+</style>
+<div class="footer-bottom-row">
+  <a href="/sitemap/">Sitemap</a>
+  <div class="footer-visitors">
+    <img class="footer-hits" src="https://hits.sh/jisenli.me.svg?style=flat&label=Visitors&extraCount=0&color=2563eb&labelColor=1e3a8a" alt="Visitor Count" />
+    {% if site.clustrmaps_id %}
+    <div class="visitor-map" style="width:150px;height:95px;overflow:hidden;">
+      <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?cl=9db8d2&w=150&t=n&d={{ site.clustrmaps_id }}&co=f2f3f3&ct=000000"></script>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% if site.clustrmaps_id %}
+<script>
+  // The theme's sticky footer measures footer height on load, but the visitor
+  // map renders asynchronously afterwards. Re-trigger the measurement a few
+  // times so the reserved space grows to fit the map (prevents it overlapping
+  // the last content block, e.g. Education).
+  window.addEventListener('load', function () {
+    [300, 900, 1800, 3000].forEach(function (t) {
+      setTimeout(function () { window.dispatchEvent(new Event('resize')); }, t);
+    });
+  });
+</script>
+{% endif %}
 
 <!-- Support for MatJax -->
 <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>

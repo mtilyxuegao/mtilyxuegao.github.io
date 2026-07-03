@@ -161,6 +161,11 @@ analytics:
   google:
     tracking_id          : "G-6NLEGBYMNJ"
 
+# Visitor Map (ClustrMaps / MapMyVisitors) — leave blank to hide.
+# 1) Register your site URL at https://clustrmaps.com  2) Copy the "d=" hash from the
+# generated embed code  3) Paste just that hash below (e.g. clustrmaps_id: "AbCdEf123...").
+clustrmaps_id            : "lvXe5sPX4gwQpVXhK8509kB3a7zzRQG2ii19tw2hMcc"
+
 
 # Reading Files
 include:
