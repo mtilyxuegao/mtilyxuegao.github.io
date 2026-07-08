@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I am **Jisen Li**. I recently graduated with a B.S. in Mathematics and Computer Science from the **University of Illinois Urbana-Champaign (UIUC)**. My research interests focus on **inference, AI agents, and retrieval and ranking**. At **Together AI**, I work on speculative decoding, quantization and agents in collaboration with **[Dr. Shirley Wu](https://xwushirley.github.io/)** and **[Dr. Ben Athiwaratkun](https://benathi.github.io/)**.
+Hello! I am **Jisen Li**, an **Incoming AI Researcher at [Together AI](https://www.together.ai/)**. I recently graduated with a B.S. in Mathematics and Computer Science from the **University of Illinois Urbana-Champaign (UIUC)**. My research interests focus on **inference, AI agents, and retrieval and ranking**. At **Together AI**, I work on speculative decoding, quantization and agents in collaboration with **[Dr. Shirley Wu](https://xwushirley.github.io/)** and **[Dr. Ben Athiwaratkun](https://benathi.github.io/)**.
 
 In industry experience, I have interned at **Nexa AI**, where I worked on on-device models and AI agents; at **Snowflake**, focusing on embedded search models and hybrid retrieval systems; and at **TikTok**, where I developed multimodal recommendation models.
 
