@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I am **Jisen Li**, an **Incoming AI Researcher at [Together AI](https://www.together.ai/)**. I recently graduated with a B.S. in Mathematics and Computer Science from the **University of Illinois Urbana-Champaign (UIUC)**. My research interests focus on **inference, AI agents, and retrieval and ranking**. At **Together AI**, I work on speculative decoding, quantization and agents in collaboration with **[Dr. Shirley Wu](https://xwushirley.github.io/)** and **[Dr. Ben Athiwaratkun](https://benathi.github.io/)**.
+Hello! I am **Jisen Li**, an **AI Researcher at [Together AI](https://www.together.ai/)**. I recently graduated with a B.S. in Mathematics and Computer Science from the **University of Illinois Urbana-Champaign (UIUC)**. My research interests focus on **inference, AI agents, and retrieval and ranking**. At **Together AI**, I work on speculative decoding, quantization and agents in collaboration with **[Dr. Shirley Wu](https://xwushirley.github.io/)** and **[Dr. Ben Athiwaratkun](https://benathi.github.io/)**.
 
 In industry experience, I have interned at **Nexa AI**, where I worked on on-device models and AI agents; at **Snowflake**, focusing on embedded search models and hybrid retrieval systems; and at **TikTok**, where I developed multimodal recommendation models.
 
@@ -20,6 +20,7 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 <div class="news-feed" markdown="1">
 
+- **[July 2026]** Joined **[Together AI](https://www.together.ai/)** full-time as an **AI Researcher**!
 - **[July 2026]** Released **[PaperPilot](https://paperpilot.papersearch.org/)**: Multi-Turn Agentic Scientific Literature Search via Workflow Induction! [[Paper]](https://arxiv.org/abs/2607.00597)
 - **[May 2026]** Graduated from **UIUC** 🎓, *Magna Cum Laude*!
 - **[April 2026]** **[Aurora](https://aurora-spec-ai.github.io/)** and **[Agent Protocol](https://arxiv.org/pdf/2510.17149)** papers accepted to **ICML 2026** 🎉!
