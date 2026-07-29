@@ -53,6 +53,10 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 ## Industry Experience
 
+### ![Together AI](../images/together.svg){: width="24px"} Together AI – AI Researcher <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jul 2026 – Present*</span>
+
+**Efficient Inference & Agents & Post-Training**
+
 ### ![Together AI](../images/together.svg){: width="24px"} Together AI – Research Intern <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jan 2026 – May 2026*</span>
 
 **Speculative Decoding ([Aurora](https://aurora-spec-ai.github.io/)):** Developed a unified training-serving system that continuously learns speculators from live inference traces, achieving 1.45× speedup on frontier models and 1.25× additional speedup under distribution shift. **Accepted to ICML 2026.** [[Paper]](https://arxiv.org/abs/2602.06932)
