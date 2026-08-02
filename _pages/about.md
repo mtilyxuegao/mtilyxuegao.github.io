@@ -14,7 +14,7 @@ In industry experience, I have interned at **Nexa AI**, where I worked on on-dev
 
 In academic research, I have worked at **[UIUC U-Lab](https://ulab-uiuc.github.io/)** under the supervision of **[Prof. Jiaxuan You](https://cs.stanford.edu/people/jiaxuan/)**, researching AI agent communication protocols and multi-agent benchmarking. I have also conducted research at the **University of Chicago** under the supervision of **[Dr. Eliu A. Huerta](https://scholar.google.com/citations?user=CZQuCS0AAAAJ&hl=en)**, focusing on AI deployment, and at **Tsinghua University** under the guidance of **[Prof. Yongqiang Lyu](https://www.linkedin.com/in/yongqianglu/)**, focusing on computer vision and digital signal processing.
 
-Outside of research, I enjoy fitness and strategy games such as Go. Please feel free to reach out at [jisenli2@illinois.edu](mailto:jisenli2@illinois.edu)—I would be happy to discuss collaboration opportunities.
+Outside of research, I enjoy fitness and strategy games such as Go. Please feel free to reach out at [jisenli@together.ai](mailto:jisenli@together.ai)—I would be happy to discuss collaboration opportunities.
 
 ## News 🎉
 
