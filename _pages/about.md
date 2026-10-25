@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I am **Jisen Li**, an **AI Researcher at [Together AI](https://www.together.ai/)**. I recently graduated with a B.S. in Mathematics and Computer Science from the **University of Illinois Urbana-Champaign (UIUC)**. My research interests focus on **inference, AI agents, and retrieval and ranking**. At **Together AI**, I work on speculative decoding, quantization and agents in collaboration with **[Dr. Shirley Wu](https://xwushirley.github.io/)** and **[Dr. Ben Athiwaratkun](https://benathi.github.io/)**.
+Hello! I am **Jisen Li**, an **AI Researcher at [Together AI](https://www.together.ai/)**. I recently graduated with a B.S. in Mathematics and Computer Science from the **University of Illinois Urbana-Champaign (UIUC)**. My research interests focus on **reinforcement learning (RL), inference, and AI agents**. At **Together AI**, I work on **RL algorithms and platforms** in collaboration with **[Ivan Provilkov](https://www.linkedin.com/in/ivan-provilkov/)** and **[Max Ryabinin](https://mryab.github.io/)**, and previously worked on speculative decoding and quantization with **[Dr. Shirley Wu](https://xwushirley.github.io/)** and **[Dr. Ben Athiwaratkun](https://benathi.github.io/)**.
 
 In industry experience, I have interned at **Nexa AI**, where I worked on on-device models and AI agents; at **Snowflake**, focusing on embedded search models and hybrid retrieval systems; and at **TikTok**, where I developed multimodal recommendation models.
 
@@ -57,7 +57,7 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 ### ![Together AI](../images/together.svg){: width="24px"} Together AI – AI Researcher <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jul 2026 – Present*</span>
 
-**Efficient Inference & Agents & Post-Training**
+**Post-Training & Inference & Agents**
 
 ### ![Together AI](../images/together.svg){: width="24px"} Together AI – Research Intern <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jan 2026 – May 2026*</span>
 
