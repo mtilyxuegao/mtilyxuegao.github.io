@@ -20,6 +20,7 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 <div class="news-feed" markdown="1">
 
+- **[Oct 2026]** Released **[ORL](https://introspective-diffusion.github.io/orl-dlm/)** for Diffusion LLMs! [[Paper]](https://arxiv.org/abs/2610.20687)
 - **[Sept 2026]** **[OSCAR](https://oscar-quantize.github.io/)** paper accepted to **NeurIPS 2026** 🎉! [[Paper]](https://arxiv.org/abs/2605.17757)
 - **[Sept 2026]** **OS-Omni** accepted to **NeurIPS 2026 Evaluations & Datasets Track**! [[Paper]](https://openreview.net/forum?id=UlijzWpwGW)
 - **[July 2026]** Joined **[Together AI](https://www.together.ai/)** full-time as an **AI Researcher**!
