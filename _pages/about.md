@@ -20,6 +20,8 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 <div class="news-feed" markdown="1">
 
+- **[Sept 2026]** **[OSCAR](https://oscar-quantize.github.io/)** paper accepted to **NeurIPS 2026** 🎉! [[Paper]](https://arxiv.org/abs/2605.17757)
+- **[Sept 2026]** **OS-Omni** accepted to **NeurIPS 2026 Evaluations & Datasets Track**! [[Paper]](https://openreview.net/forum?id=UlijzWpwGW)
 - **[July 2026]** Joined **[Together AI](https://www.together.ai/)** full-time as an **AI Researcher**!
 - **[July 2026]** Released **[PaperPilot](https://paperpilot.papersearch.org/)**: Multi-Turn Agentic Scientific Literature Search via Workflow Induction! [[Paper]](https://arxiv.org/abs/2607.00597)
 - **[May 2026]** Graduated from **UIUC** 🎓, *Magna Cum Laude*!
@@ -63,7 +65,7 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 **KV-Cache Quantization (SAW-INT4):** System-aware 4-bit KV-cache quantization—token-wise INT4 with block-diagonal Hadamard rotation—achieving near-lossless accuracy with zero serving overhead. **Co-First Author, under review at COLM 2026.** [[Paper]](https://arxiv.org/pdf/2604.19157) [[Code]](https://github.com/togethercomputer/saw-int4)
 
-**KV-Cache Quantization ([OSCAR](https://oscar-quantize.github.io/)):** Offline covariance-aware rotation for 2-bit KV-cache quantization with a custom INT2 attention kernel, achieving ~8× memory reduction and up to 7× throughput. [[Paper]](https://arxiv.org/pdf/2605.17757) [[Code]](https://github.com/FutureMLS-Lab/OSCAR)
+**KV-Cache Quantization ([OSCAR](https://oscar-quantize.github.io/)):** Offline covariance-aware rotation for 2-bit KV-cache quantization with a custom INT2 attention kernel, achieving ~8× memory reduction and up to 7× throughput. **Accepted to NeurIPS 2026.** [[Paper]](https://arxiv.org/pdf/2605.17757) [[Code]](https://github.com/FutureMLS-Lab/OSCAR)
 
 ### ![Nexa AI](../images/Nexa.png){: width="24px"} Nexa AI – AI Research Engineer Intern <span style="float: right; font-size: 0.9em; font-weight: normal;">*Oct 2025 – Dec 2025*</span>
 
