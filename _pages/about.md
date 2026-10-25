@@ -58,7 +58,7 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 ### ![Together AI](../images/together.svg){: width="24px"} Together AI – AI Researcher <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jul 2026 – Present*</span>
 
-**RL Post-Training Platform ([Together Post-Training](https://www.together.ai/blog/together-post-training)):** Contributed to Together's post-training service, which lets users write their own SFT/RL training loops while the platform runs the infrastructure.
+**RL Post-Training Platform ([Together Post-Training](https://www.together.ai/blog/together-post-training)):** Contributed to Together's post-training service, which lets users write their own SFT/RL training loops while the platform handles trainer–generator orchestration, asynchronous RL, and multi-LoRA serving.
 
 **Diffusion LLM Post-Training ([ORL](https://introspective-diffusion.github.io/orl-dlm/)):** On-policy residual learning that trains diffusion LLMs on their own denoising trajectories with an entropy-contraction objective, achieving up to 6.2× more tokens per forward and ~6.9× end-to-end throughput at comparable quality. [[Paper]](https://arxiv.org/abs/2610.20687)
 
