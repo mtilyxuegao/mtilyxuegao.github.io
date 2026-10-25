@@ -64,7 +64,7 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 ### ![Together AI](../images/together.svg){: width="24px"} Together AI – Research Intern <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jan 2026 – May 2026*</span>
 
-**Speculative Decoding ([Aurora](https://aurora-spec-ai.github.io/)):** Developed a unified training-serving system that continuously learns speculators from live inference traces, achieving 1.45× speedup on frontier models and 1.25× additional speedup under distribution shift. **Accepted to ICML 2026.** [[Paper]](https://arxiv.org/abs/2602.06932)
+**Speculative Decoding ([Aurora](https://aurora-spec-ai.github.io/)):** Developed a unified training-serving system that continuously learns speculators from live inference traces, achieving 1.45× speedup on frontier models and 1.25× additional speedup under distribution shift. **Accepted to ICML 2026.** [[Paper]](https://arxiv.org/abs/2602.06932) [[Code]](https://github.com/togethercomputer/aurora)
 
 **KV-Cache Quantization (SAW-INT4):** System-aware 4-bit KV-cache quantization—token-wise INT4 with block-diagonal Hadamard rotation—achieving near-lossless accuracy with zero serving overhead. **Co-First Author.** [[Paper]](https://arxiv.org/pdf/2604.19157) [[Code]](https://github.com/togethercomputer/saw-int4)
 
@@ -92,7 +92,7 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 ### ![UIUC](../images/uiuc.png){: width="24px"} University of Illinois Urbana-Champaign <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jul 2025 – Present*</span>
 
-**Scientific Literature Search Agent (PaperPilot):** A multi-turn agent that induces executable DAG workflows over paper-search tools; a 9B workflow-induction model improves Hit@5 from 58.0 to 77.0 and cuts workflow errors from 9.5% to 0%. [[Paper]](https://arxiv.org/abs/2607.00597)
+**Scientific Literature Search Agent (PaperPilot):** A multi-turn agent that induces executable DAG workflows over paper-search tools; a 9B workflow-induction model improves Hit@5 from 58.0 to 77.0 and cuts workflow errors from 9.5% to 0%. Supervised by **[Prof. Bingxin Zhao](https://www.bingxinzhao.com/)**. [[Paper]](https://arxiv.org/abs/2607.00597)
 
 **AI Agent Protocol Benchmarking:** Developed a unified benchmark to evaluate agent communication protocols across Document QA, Collaborative Coding, and MAPF. Contributed to ANP protocol adaptation and Meta Protocol integration.
 
