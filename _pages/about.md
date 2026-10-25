@@ -50,10 +50,9 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 ## Research Interests
 
+- **Post-Training:** Reinforcement learning (RL) algorithms, agentic RL with environment rewards, and scalable RL training platforms.
 - **Inference:** Speculative Decoding, KV Cache Quantization, and efficient model serving.
 - **Agentic AI:** Agents with memory, planning, and decision-making for collaboration.
-- **LLM Fine-tuning:** Instruction tuning, contrastive learning, CoT, and RLHF for alignment.
-- **Multimodal:** Vision-text models and cross-modal alignment using frozen LLMs.
 
 ## Industry Experience
 
