@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Jisen Li"
 title_separator          : "-"
 name                     : &name "Jisen Li"
-description              : &description "Math & CS @ UIUC | Research in AI inference, retrieval & ranking, and agents"
+description              : &description "AI Researcher @ Together AI | Research in RL post-training, inference, and agents"
 url                      : https://jisenli.me
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "mtilyxuegao/mtilyxuegao.github.io"
@@ -27,7 +27,7 @@ author:
   pronouns         : # example: "she/her"
   bio              : "Math & CS @UIUC<br>AI Researcher @Together AI"
   location         : # hidden, e.g. "San Francisco, CA"
-  employer         : "UIUC"
+  employer         : "Together AI"
   uri              : # URL
   email            : "jisenli@together.ai"
 

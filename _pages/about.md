@@ -10,9 +10,9 @@ redirect_from:
 
 Hello! I am **Jisen Li**, an **AI Researcher at [Together AI](https://www.together.ai/)**. I recently graduated with a B.S. in Mathematics and Computer Science from the **University of Illinois Urbana-Champaign (UIUC)**. My research interests focus on **reinforcement learning (RL), inference, and AI agents**. At **Together AI**, I work on **RL algorithms and platforms** in collaboration with **[Ivan Provilkov](https://www.linkedin.com/in/ivan-provilkov/)** and **[Max Ryabinin](https://mryab.github.io/)**, and previously worked on speculative decoding and quantization with **[Dr. Shirley Wu](https://xwushirley.github.io/)** and **[Dr. Ben Athiwaratkun](https://benathi.github.io/)**.
 
-In industry experience, I have interned at **Nexa AI**, where I worked on on-device models and AI agents; at **Snowflake**, focusing on embedded search models and hybrid retrieval systems; and at **TikTok**, where I developed multimodal recommendation models.
+In industry experience, I have interned at **Nexa AI**, where I worked on on-device models and AI agents; at **Snowflake**, focusing on embedding models and hybrid retrieval systems; and at **TikTok**, where I developed multimodal recommendation models.
 
-In academic research, I have worked at **[UIUC U-Lab](https://ulab-uiuc.github.io/)** under the supervision of **[Prof. Jiaxuan You](https://cs.stanford.edu/people/jiaxuan/)**, researching AI agent communication protocols and multi-agent benchmarking. I have also conducted research at the **University of Chicago** under the supervision of **[Dr. Eliu A. Huerta](https://scholar.google.com/citations?user=CZQuCS0AAAAJ&hl=en)**, focusing on AI deployment, and at **Tsinghua University** under the guidance of **[Prof. Yongqiang Lyu](https://www.linkedin.com/in/yongqianglu/)**, focusing on computer vision and digital signal processing.
+In academic research, I have worked at **[UIUC U-Lab](https://ulab-uiuc.github.io/)** under the supervision of **[Prof. Jiaxuan You](https://jiaxuan.web.illinois.edu/)**, researching AI agent communication protocols and multi-agent benchmarking. I have also conducted research at the **University of Chicago** under the supervision of **[Dr. Eliu A. Huerta](https://scholar.google.com/citations?user=CZQuCS0AAAAJ&hl=en)**, focusing on AI deployment, and at **Tsinghua University** under the guidance of **[Prof. Yongqiang Lyu](https://www.linkedin.com/in/yongqianglu/)**, focusing on computer vision and digital signal processing.
 
 Outside of research, I enjoy fitness and strategy games such as Go. Please feel free to reach out at [jisenli@together.ai](mailto:jisenli@together.ai)—I would be happy to discuss collaboration opportunities.
 
@@ -22,16 +22,16 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 - **[Oct 2026]** Contributed to the launch of **[Together Post-Training](https://www.together.ai/blog/together-post-training)** 🚀: RL and SFT with your own training loop on Together AI!
 - **[Oct 2026]** Released **[ORL](https://introspective-diffusion.github.io/orl-dlm/)** for Diffusion LLMs! [[Paper]](https://arxiv.org/abs/2610.20687)
-- **[Sept 2026]** **[OSCAR](https://oscar-quantize.github.io/)** paper accepted to **NeurIPS 2026** 🎉! [[Paper]](https://arxiv.org/abs/2605.17757)
-- **[Sept 2026]** **OS-Omni** accepted to **NeurIPS 2026 Evaluations & Datasets Track**! [[Paper]](https://openreview.net/forum?id=UlijzWpwGW)
-- **[July 2026]** Joined **[Together AI](https://www.together.ai/)** full-time as an **AI Researcher**!
-- **[July 2026]** Released **[PaperPilot](https://paperpilot.papersearch.org/)**: Multi-Turn Agentic Scientific Literature Search via Workflow Induction! [[Paper]](https://arxiv.org/abs/2607.00597)
+- **[Sep 2026]** **[OSCAR](https://oscar-quantize.github.io/)** paper accepted to **NeurIPS 2026** 🎉! [[Paper]](https://arxiv.org/abs/2605.17757)
+- **[Sep 2026]** **OS-Omni** accepted to **NeurIPS 2026 Evaluations & Datasets Track**! [[Paper]](https://openreview.net/forum?id=UlijzWpwGW)
+- **[Jul 2026]** Joined **[Together AI](https://www.together.ai/)** full-time as an **AI Researcher**!
+- **[Jul 2026]** Released **PaperPilot**: Multi-Turn Agentic Scientific Literature Search via Workflow Induction! [[Paper]](https://arxiv.org/abs/2607.00597)
 - **[May 2026]** Graduated from **UIUC** 🎓, *Magna Cum Laude*!
-- **[April 2026]** **[Aurora](https://aurora-spec-ai.github.io/)** and **[Agent Protocol](https://arxiv.org/pdf/2510.17149)** papers accepted to **ICML 2026** 🎉!
-- **[Feb 2026]** **[Aurora](https://aurora-spec-ai.github.io/)** Day Zero support for **Qwen3-Coder-Next-FP8**! [[Checkpoint]](https://huggingface.co/togethercomputer/Aurora-Spec-Qwen3-Coder-Next-FP8).
+- **[Apr 2026]** **[Aurora](https://aurora-spec-ai.github.io/)** and **[Agent Protocol](https://arxiv.org/pdf/2510.17149)** papers accepted to **ICML 2026** 🎉!
+- **[Feb 2026]** **[Aurora](https://aurora-spec-ai.github.io/)** Day Zero support for **Qwen3-Coder-Next-FP8**! [[Checkpoint]](https://huggingface.co/togethercomputer/Aurora-Spec-Qwen3-Coder-Next-FP8)
 - **[Jan 2026]** Joined Together AI as **Research Intern**!
-- **[Jan 2026]** [Kitty paper](https://arxiv.org/pdf/2511.18643) accepted to **MLSys 2026**!
-- **[Dec 2025]** Grateful for **OpenAI** offer, **but** chose different path!
+- **[Jan 2026]** **[Kitty](https://arxiv.org/pdf/2511.18643)** paper accepted to **MLSys 2026**!
+- **[Dec 2025]** Grateful for an **OpenAI** offer, **but** chose a different path!
 
 </div>
 
@@ -51,22 +51,22 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 ## Research Interests
 
 - **Post-Training:** Reinforcement learning (RL) algorithms, agentic RL with environment rewards, and scalable RL training platforms.
-- **Inference:** Speculative Decoding, KV Cache Quantization, and efficient model serving.
+- **Inference:** Speculative decoding, KV cache quantization, and efficient model serving.
 - **Agentic AI:** Agents with memory, planning, and decision-making for collaboration.
 
 ## Industry Experience
 
 ### ![Together AI](../images/together.svg){: width="24px"} Together AI – AI Researcher <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jul 2026 – Present*</span>
 
-**Post-Training & Inference & Agents**
+**RL Post-Training Platform ([Together Post-Training](https://www.together.ai/blog/together-post-training)):** Contributed to Together's post-training service, which lets users write their own SFT/RL training loops while the platform runs the infrastructure.
 
-**RL Post-Training Platform ([Together Post-Training](https://www.together.ai/blog/together-post-training)):** Contributed to Together's post-training service, where users write their own SFT/RL training loops (GRPO, CISPO, DPPO, or custom losses) while the platform handles trainer–generator orchestration, asynchronous RL, and multi-LoRA training and serving.
+**Diffusion LLM Post-Training ([ORL](https://introspective-diffusion.github.io/orl-dlm/)):** On-policy residual learning that trains diffusion LLMs on their own denoising trajectories with an entropy-contraction objective, achieving up to 6.2× more tokens per forward and ~6.9× end-to-end throughput at comparable quality. [[Paper]](https://arxiv.org/abs/2610.20687)
 
 ### ![Together AI](../images/together.svg){: width="24px"} Together AI – Research Intern <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jan 2026 – May 2026*</span>
 
 **Speculative Decoding ([Aurora](https://aurora-spec-ai.github.io/)):** Developed a unified training-serving system that continuously learns speculators from live inference traces, achieving 1.45× speedup on frontier models and 1.25× additional speedup under distribution shift. **Accepted to ICML 2026.** [[Paper]](https://arxiv.org/abs/2602.06932)
 
-**KV-Cache Quantization (SAW-INT4):** System-aware 4-bit KV-cache quantization—token-wise INT4 with block-diagonal Hadamard rotation—achieving near-lossless accuracy with zero serving overhead. **Co-First Author, under review at COLM 2026.** [[Paper]](https://arxiv.org/pdf/2604.19157) [[Code]](https://github.com/togethercomputer/saw-int4)
+**KV-Cache Quantization (SAW-INT4):** System-aware 4-bit KV-cache quantization—token-wise INT4 with block-diagonal Hadamard rotation—achieving near-lossless accuracy with zero serving overhead. **Co-First Author.** [[Paper]](https://arxiv.org/pdf/2604.19157) [[Code]](https://github.com/togethercomputer/saw-int4)
 
 **KV-Cache Quantization ([OSCAR](https://oscar-quantize.github.io/)):** Offline covariance-aware rotation for 2-bit KV-cache quantization with a custom INT2 attention kernel, achieving ~8× memory reduction and up to 7× throughput. **Accepted to NeurIPS 2026.** [[Paper]](https://arxiv.org/pdf/2605.17757) [[Code]](https://github.com/FutureMLS-Lab/OSCAR)
 
@@ -84,7 +84,7 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 ## Academic Research
 
-### ![Together AI](../images/together.svg){: width="24px"} Together AI <span style="float: right; font-size: 0.9em; font-weight: normal;">*Sep 2025 – Present*</span>
+### ![Together AI](../images/together.svg){: width="24px"} Together AI <span style="float: right; font-size: 0.9em; font-weight: normal;">*Sep 2025 – Dec 2025*</span>
 
 **KV Cache Quantization (Kitty):** Developed Kitty, a mixed-precision KV caching system. Introduced Dynamic Channel-wise Precision Boost, achieving 8× memory reduction with near-zero accuracy loss and 2.1×–4.1× throughput improvement.
 
@@ -92,11 +92,11 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 ### ![UIUC](../images/uiuc.png){: width="24px"} University of Illinois Urbana-Champaign <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jul 2025 – Present*</span>
 
-**Scientific Literature Search Agent ([PaperPilot](https://paperpilot.papersearch.org/)):** A multi-turn agent that induces executable DAG workflows over paper-search tools; a 9B workflow-induction model improves Hit@5 from 58.0 to 77.0 and cuts workflow errors from 9.5% to 0%. [[Paper]](https://arxiv.org/abs/2607.00597)
+**Scientific Literature Search Agent (PaperPilot):** A multi-turn agent that induces executable DAG workflows over paper-search tools; a 9B workflow-induction model improves Hit@5 from 58.0 to 77.0 and cuts workflow errors from 9.5% to 0%. [[Paper]](https://arxiv.org/abs/2607.00597)
 
 **AI Agent Protocol Benchmarking:** Developed a unified benchmark to evaluate agent communication protocols across Document QA, Collaborative Coding, and MAPF. Contributed to ANP protocol adaptation and Meta Protocol integration.
 
-**Outcome:** Co-First Author, Accepted to ICML 2026. Supervised by **[Prof. Jiaxuan You](https://cs.stanford.edu/people/jiaxuan/)** [[Paper]](https://arxiv.org/pdf/2510.17149)
+**Outcome:** Co-First Author, Accepted to ICML 2026. Supervised by **[Prof. Jiaxuan You](https://jiaxuan.web.illinois.edu/)**. [[Paper]](https://arxiv.org/pdf/2510.17149)
 
 ### ![UChicago](../images/uchicago.png){: width="24px"} University of Chicago (Globus Lab) <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jun 2024 – Aug 2024*</span>
 
