@@ -11,7 +11,8 @@ author_profile: true
        (none)        written by me, hosted here
        contributed   a post elsewhere that I contributed to
        supported     a post elsewhere that I want to support
-     Posts with a `link` point to that external URL instead of a page on this site. -->
+     Posts with a `link` point to that external URL instead of a page on this site.
+     `image` is an optional thumbnail under /images/blog/ (ideally ~1.91:1). -->
 
 <p class="blog-legend">
   <i class="fas fa-fw fa-pen-nib" aria-hidden="true"></i> Written
@@ -31,27 +32,60 @@ author_profile: true
     {% when "supported" %}{% assign icon = "fa-thumbs-up" %}{% assign label = "Supported" %}
     {% else %}{% assign icon = "fa-pen-nib" %}{% assign label = "Written" %}
   {% endcase %}
-  <div class="blog-item">
-    <i class="fas fa-fw {{ icon }} blog-item__kind" title="{{ label }}" aria-label="{{ label }}"></i>
-    <div class="blog-item__body">
-      <a class="blog-item__title" href="{% if post.link %}{{ post.link }}{% else %}{{ base_path }}{{ post.url }}{% endif %}">{{ post.title }}</a>
-      {% if post.link %}<i class="fas fa-arrow-up-right-from-square blog-item__ext" aria-hidden="true"></i>{% endif %}
-      <div class="blog-item__meta">
-        {{ post.date | date: "%b %-d, %Y" }}{% if post.source %} · {{ post.source }}{% endif %}
+  {% if post.link %}{% assign href = post.link %}{% else %}{% assign href = base_path | append: post.url %}{% endif %}
+  <article class="blog-card">
+    <a class="blog-card__thumb" href="{{ href }}" tabindex="-1" aria-hidden="true">
+      {% if post.image %}<img src="{{ base_path }}{{ post.image }}" alt="" loading="lazy">{% else %}<i class="fas {{ icon }}"></i>{% endif %}
+    </a>
+    <div class="blog-card__body">
+      <a class="blog-card__title" href="{{ href }}">{{ post.title }}</a>
+      {% if post.link %}<i class="fas fa-arrow-up-right-from-square blog-card__ext" aria-hidden="true"></i>{% endif %}
+      <div class="blog-card__meta">
+        <i class="fas fa-fw {{ icon }}" aria-hidden="true"></i> {{ label }} · {{ post.date | date: "%b %-d, %Y" }}{% if post.source %} · {{ post.source }}{% endif %}
       </div>
-      {% if post.excerpt %}<p class="blog-item__excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>{% endif %}
+      {% if post.excerpt %}<p class="blog-card__excerpt">{{ post.excerpt | strip_html | truncatewords: 45 }}</p>{% endif %}
     </div>
-  </div>
+  </article>
 {% endfor %}
 
 <style>
-.blog-legend { font-size: 0.85em; opacity: 0.75; }
+.blog-legend { font-size: 0.8em; opacity: 0.7; }
 .blog-legend i { margin-left: 0.8em; }
 .blog-legend i:first-child { margin-left: 0; }
-.blog-item { display: flex; gap: 0.6em; margin-bottom: 1.2em; }
-.blog-item__kind { margin-top: 0.3em; opacity: 0.7; }
-.blog-item__title { font-weight: 600; }
-.blog-item__ext { font-size: 0.7em; margin-left: 0.2em; opacity: 0.6; }
-.blog-item__meta { font-size: 0.85em; opacity: 0.75; margin-top: 0.15em; }
-.blog-item__excerpt { margin: 0.3em 0 0; }
+.blog-card {
+  display: flex;
+  gap: 1.2em;
+  align-items: flex-start;
+  padding: 1.1em 0;
+  border-bottom: 1px solid rgba(128,128,128,0.2);
+}
+.blog-card__thumb {
+  flex: 0 0 200px;
+  aspect-ratio: 1.91 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 1px solid rgba(128,128,128,0.2);
+  background: rgba(128,128,128,0.08);
+  font-size: 1.6em;
+  color: rgba(128,128,128,0.6);
+}
+.blog-card__thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.blog-card__body { flex: 1; min-width: 0; }
+.blog-card .blog-card__title {
+  font-weight: 600;
+  color: inherit;
+  text-decoration: none;
+  text-wrap: pretty;
+}
+.blog-card .blog-card__title:hover { text-decoration: underline; }
+.blog-card__ext { font-size: 0.65em; margin-left: 0.25em; opacity: 0.5; }
+.blog-card__meta { font-size: 0.8em; opacity: 0.7; margin-top: 0.25em; }
+.blog-card__excerpt { font-size: 0.9em; margin: 0.4em 0 0; text-wrap: pretty; }
+@media (max-width: 600px) {
+  .blog-card { flex-direction: column; gap: 0.7em; }
+  .blog-card__thumb { flex-basis: auto; width: 100%; }
+}
 </style>
