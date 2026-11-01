@@ -29,7 +29,7 @@ author:
   location         : # hidden, e.g. "San Francisco, CA"
   employer         : "Together AI"
   uri              : # URL
-  email            : "jisenli@together.ai"
+  email            : "jisenli [at] together [dot] ai" # shown as plain text, not a mailto link, to deter scrapers
 
   # Academic websites
   academia         : # URL
