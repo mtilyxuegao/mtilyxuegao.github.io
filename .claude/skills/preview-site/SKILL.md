@@ -31,14 +31,22 @@ time, or bundler will look in the wrong place.
 export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"
 export BUNDLE_PATH=vendor/bundle
 bundle install                       # only if `bundle exec jekyll -v` fails
-bundle exec jekyll serve --host 127.0.0.1 --port 4000 --livereload
+bundle exec jekyll serve --host localhost --port 4000 --livereload
 ```
+
+Use `--host localhost`, not `127.0.0.1`. In development `jekyll serve`
+rewrites `site.url` to `http://localhost:4000` even when bound to
+`127.0.0.1`, so every asset URL points at `localhost`. A page opened at
+`127.0.0.1:4000` then loads the Font Awesome webfonts cross-origin, the
+browser blocks them, and every icon (sidebar, blog kind icons) renders as
+an empty box. With `--host localhost` WEBrick listens on both
+`127.0.0.1` and `[::1]` and the page and its assets share one origin.
 
 Run the serve command in the background — it does not exit. Ready when
 the log contains:
 
 ```
-    Server address: http://127.0.0.1:4000/
+    Server address: http://localhost:4000/
   Server running... press ctrl-c to stop.
 ```
 
@@ -48,7 +56,7 @@ Wait for it rather than sleeping a fixed amount:
 until grep -qE "Server running|Address already in use|error:" <logfile>; do sleep 1; done
 ```
 
-`--livereload` (LiveReload on `127.0.0.1:35729`) auto-rebuilds on edits
+`--livereload` (LiveReload on `localhost:35729`) auto-rebuilds on edits
 to `_pages/`, `_includes/`, `_sass/`, etc. Editing `_config.yml` is the
 exception — Jekyll does not pick that up, so restart the server.
 
@@ -57,12 +65,12 @@ Harmless noise in the log, not a failure:
 
 ## Drive it — don't stop at "server started"
 
-Open it for the user with `open http://127.0.0.1:4000/`, then actually
+Open it for the user with `open http://localhost:4000/`, then actually
 verify the change rendered. Fetching the HTML and stripping tags is
 faster and more reliable than reading a screenshot for text edits:
 
 ```bash
-curl -s http://127.0.0.1:4000/ -o /tmp/home.html
+curl -s http://localhost:4000/ -o /tmp/home.html
 python3 -c "
 import re, html
 s = open('/tmp/home.html').read()
