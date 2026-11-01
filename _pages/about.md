@@ -108,12 +108,12 @@ Outside of research, I enjoy fitness and strategy games such as Go, and I'm alwa
 
 - **RL Post-Training Platform ([Together Post-Training](https://www.together.ai/blog/together-post-training)):** Contributed to Together's post-training service, which lets users write their own SFT/RL training loops while the platform handles trainer–generator orchestration, asynchronous RL, and multi-LoRA serving.
 - **Diffusion LLM Post-Training ([ORL](https://introspective-diffusion.github.io/orl-dlm/)):** On-policy residual learning that trains diffusion LLMs on their own denoising trajectories, achieving ~6.9× end-to-end throughput.
-- **Quantization-Aware Training (QATFactory):** Quantization-aware distillation and RL framework for LLMs that exports deployment-ready NVFP4, MXFP4, and Q4_K models.
+- **Quantization-Aware Training ([QATFactory](https://arxiv.org/abs/2609.39223)):** Quantization-aware distillation and RL framework for LLMs that exports deployment-ready NVFP4, MXFP4, and Q4_K models.
 
 ### ![Together AI](../images/together.svg){: width="24px"} Together AI – Research Intern <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jan 2026 – May 2026*</span>
 
 - **Speculative Decoding ([Aurora](https://aurora-spec-ai.github.io/)):** Built a training-serving system that continuously learns speculators from live inference traces, achieving 1.45× speedup on frontier models.
-- **KV-Cache Quantization (SAW-INT4):** Token-wise INT4 KV-cache quantization with block-diagonal Hadamard rotation, near-lossless at zero serving overhead.
+- **KV-Cache Quantization ([SAW-INT4](https://arxiv.org/abs/2604.19157)):** Token-wise INT4 KV-cache quantization with block-diagonal Hadamard rotation, near-lossless at zero serving overhead.
 - **KV-Cache Quantization ([OSCAR](https://oscar-quantize.github.io/)):** Offline covariance-aware rotation for 2-bit KV-cache quantization, with ~8× memory reduction and up to 7× throughput.
 
 ### ![Nexa AI](../images/Nexa.png){: width="24px"} Nexa AI <span style="font-size: 0.8em; font-weight: normal;">(acquired by Qualcomm)</span> – AI Research Engineer Intern <span style="float: right; font-size: 0.9em; font-weight: normal;">*Oct 2025 – Dec 2025*</span>
@@ -122,7 +122,7 @@ Outside of research, I enjoy fitness and strategy games such as Go, and I'm alwa
 
 ### ![Snowflake](../images/snow.png){: width="24px"} Snowflake – Software Engineer Intern (AI/ML) <span style="float: right; font-size: 0.9em; font-weight: normal;">*May 2025 – Aug 2025*</span>
 
-- **Cortex Search:** Fine-tuned Arctic Embed v2.0 for retrieval (+15% nDCG) and built Gaussian-process auto-tuning for hybrid search, deployed to production.
+- **Cortex Search:** Fine-tuned [Arctic Embed v2.0](https://huggingface.co/Snowflake/snowflake-arctic-embed-m-v2.0) for retrieval (+15% nDCG) and built Gaussian-process auto-tuning for hybrid search, deployed to production.
 
 ### ![TikTok](../images/tiktok.png){: width="24px"} TikTok – Machine Learning Engineer Intern <span style="float: right; font-size: 0.9em; font-weight: normal;">*Aug 2024 – Dec 2024*</span>
 
@@ -132,12 +132,12 @@ Outside of research, I enjoy fitness and strategy games such as Go, and I'm alwa
 
 ### ![Together AI](../images/together.svg){: width="24px"} Together AI <span style="float: right; font-size: 0.9em; font-weight: normal;">*Sep 2025 – Dec 2025*</span>
 
-- **KV Cache Quantization (Kitty):** Mixed-precision 2-bit KV caching with dynamic channel-wise precision boost, achieving 8× memory reduction at near-zero accuracy loss. Supervised by **[Dr. Shirley Wu](https://xwushirley.github.io/)**.
+- **KV Cache Quantization ([Kitty](https://github.com/Summer-Summer/Kitty)):** Mixed-precision 2-bit KV caching with dynamic channel-wise precision boost, achieving 8× memory reduction at near-zero accuracy loss. Supervised by **[Dr. Shirley Wu](https://xwushirley.github.io/)**.
 
 ### ![UIUC](../images/uiuc.png){: width="24px"} University of Illinois Urbana-Champaign <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jul 2025 – Present*</span>
 
-- **Scientific Literature Search Agent (PaperPilot):** Multi-turn search agent that induces executable DAG workflows over paper-search tools, improving Hit@5 from 58.0 to 77.0. Supervised by **[Prof. Bingxin Zhao](https://www.bingxinzhao.com/)**.
-- **AI Agent Protocol Benchmarking (ProtocolBench):** Built a unified benchmark for multi-agent communication protocols across document QA, collaborative coding, and multi-agent path finding. Supervised by **[Prof. Jiaxuan You](https://jiaxuan.web.illinois.edu/)**.
+- **Scientific Literature Search Agent ([PaperPilot](https://arxiv.org/abs/2607.00597)):** Multi-turn search agent that induces executable DAG workflows over paper-search tools, improving Hit@5 from 58.0 to 77.0. Supervised by **[Prof. Bingxin Zhao](https://www.bingxinzhao.com/)** and **[Prof. Jiaxuan You](https://jiaxuan.web.illinois.edu/)**.
+- **AI Agent Protocol Benchmarking ([ProtocolBench](https://github.com/ulab-uiuc/AgentProtocols)):** Built a unified benchmark for multi-agent communication protocols across document QA, collaborative coding, and multi-agent path finding. Supervised by **[Prof. Jiaxuan You](https://jiaxuan.web.illinois.edu/)**.
 
 ### Earlier Research <span style="float: right; font-size: 0.9em; font-weight: normal;">*2020 – 2024*</span>
 
