@@ -249,6 +249,7 @@ defaults:
       path: ""
       type: posts
     values:
+      permalink: /blog/:year/:title/
       layout: single
       author_profile: true
       read_time: true

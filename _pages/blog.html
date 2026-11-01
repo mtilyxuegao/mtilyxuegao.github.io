@@ -1,0 +1,57 @@
+---
+layout: archive
+title: "Blog"
+permalink: /blog/
+author_profile: true
+---
+
+{% include base_path %}
+
+<!-- Each post sets `kind` in its front matter:
+       (none)        written by me, hosted here
+       contributed   a post elsewhere that I contributed to
+       supported     a post elsewhere that I want to support
+     Posts with a `link` point to that external URL instead of a page on this site. -->
+
+<p class="blog-legend">
+  <i class="fas fa-fw fa-pen-nib" aria-hidden="true"></i> Written
+  <i class="fas fa-fw fa-user-group" aria-hidden="true"></i> Contributed
+  <i class="fas fa-fw fa-thumbs-up" aria-hidden="true"></i> Supported
+</p>
+
+{% assign written_year = "" %}
+{% for post in site.posts %}
+  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+  {% if year != written_year %}
+    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
+    {% assign written_year = year %}
+  {% endif %}
+  {% case post.kind %}
+    {% when "contributed" %}{% assign icon = "fa-user-group" %}{% assign label = "Contributed" %}
+    {% when "supported" %}{% assign icon = "fa-thumbs-up" %}{% assign label = "Supported" %}
+    {% else %}{% assign icon = "fa-pen-nib" %}{% assign label = "Written" %}
+  {% endcase %}
+  <div class="blog-item">
+    <i class="fas fa-fw {{ icon }} blog-item__kind" title="{{ label }}" aria-label="{{ label }}"></i>
+    <div class="blog-item__body">
+      <a class="blog-item__title" href="{% if post.link %}{{ post.link }}{% else %}{{ base_path }}{{ post.url }}{% endif %}">{{ post.title }}</a>
+      {% if post.link %}<i class="fas fa-arrow-up-right-from-square blog-item__ext" aria-hidden="true"></i>{% endif %}
+      <div class="blog-item__meta">
+        {{ post.date | date: "%b %-d, %Y" }}{% if post.source %} · {{ post.source }}{% endif %}
+      </div>
+      {% if post.excerpt %}<p class="blog-item__excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>{% endif %}
+    </div>
+  </div>
+{% endfor %}
+
+<style>
+.blog-legend { font-size: 0.85em; opacity: 0.75; }
+.blog-legend i { margin-left: 0.8em; }
+.blog-legend i:first-child { margin-left: 0; }
+.blog-item { display: flex; gap: 0.6em; margin-bottom: 1.2em; }
+.blog-item__kind { margin-top: 0.3em; opacity: 0.7; }
+.blog-item__title { font-weight: 600; }
+.blog-item__ext { font-size: 0.7em; margin-left: 0.2em; opacity: 0.6; }
+.blog-item__meta { font-size: 0.85em; opacity: 0.75; margin-top: 0.15em; }
+.blog-item__excerpt { margin: 0.3em 0 0; }
+</style>
