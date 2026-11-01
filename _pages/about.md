@@ -22,6 +22,7 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 
 - **[Oct 2026]** Contributed to the launch of **[Together Post-Training](https://www.together.ai/blog/together-post-training)** 🚀: RL and SFT with your own training loop on Together AI!
 - **[Oct 2026]** Released **[ORL](https://introspective-diffusion.github.io/orl-dlm/)** for Diffusion LLMs! [[Paper]](https://arxiv.org/abs/2610.20687)
+- **[Sep 2026]** Released **QATFactory** for deployment-aligned quantization-aware training of LLMs! [[Paper]](https://arxiv.org/abs/2609.39223)
 - **[Sep 2026]** **[OSCAR](https://oscar-quantize.github.io/)** paper accepted to **NeurIPS 2026** 🎉! [[Paper]](https://arxiv.org/abs/2605.17757)
 - **[Sep 2026]** **OS-Omni** accepted to **NeurIPS 2026 Evaluations & Datasets Track**! [[Paper]](https://openreview.net/forum?id=UlijzWpwGW)
 - **[Jul 2026]** Joined **[Together AI](https://www.together.ai/)** full-time as an **AI Researcher**!
@@ -31,7 +32,6 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 - **[Feb 2026]** **[Aurora](https://aurora-spec-ai.github.io/)** Day Zero support for **Qwen3-Coder-Next-FP8**! [[Checkpoint]](https://huggingface.co/togethercomputer/Aurora-Spec-Qwen3-Coder-Next-FP8)
 - **[Jan 2026]** Joined Together AI as **Research Intern**!
 - **[Jan 2026]** **[Kitty](https://arxiv.org/pdf/2511.18643)** paper accepted to **MLSys 2026**!
-- **[Dec 2025]** Grateful for an **OpenAI** offer, **but** chose a different path!
 
 </div>
 
@@ -61,6 +61,8 @@ Outside of research, I enjoy fitness and strategy games such as Go. Please feel 
 **RL Post-Training Platform ([Together Post-Training](https://www.together.ai/blog/together-post-training)):** Contributed to Together's post-training service, which lets users write their own SFT/RL training loops while the platform handles trainer–generator orchestration, asynchronous RL, and multi-LoRA serving.
 
 **Diffusion LLM Post-Training ([ORL](https://introspective-diffusion.github.io/orl-dlm/)):** On-policy residual learning that trains diffusion LLMs on their own denoising trajectories with an entropy-contraction objective, achieving up to 6.2× more tokens per forward and ~6.9× end-to-end throughput at comparable quality. [[Paper]](https://arxiv.org/abs/2610.20687)
+
+**Quantization-Aware Training (QATFactory):** Open-source framework for quantization-aware distillation and RL of LLMs that simulates NVFP4, MXFP4, and Q4_K on BF16 hardware and exports directly to vLLM and llama.cpp, beating the best PTQ baselines by up to 9.6 points on Qwen3.5-9B. **Co-First Author.** [[Paper]](https://arxiv.org/abs/2609.39223)
 
 ### ![Together AI](../images/together.svg){: width="24px"} Together AI – Research Intern <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jan 2026 – May 2026*</span>
 
@@ -118,4 +120,9 @@ B.S. in Mathematics + Computer Science, GPA: 3.98/4.0
 **🌱 Gap Year** <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jan 2023 – Aug 2023*</span>
 
 **![HUST](../images/hust.png){: width="24px"} Huazhong University of Science and Technology (HUST)** <span style="float: right; font-size: 0.9em; font-weight: normal;">*Sep 2021 – Jan 2023*</span><br>
-B.S. in Computer Science (Transferred)
+Undergraduate Studies
+
+## Academic Service
+
+- Reviewer, **ICLR 2027**
+- Program Committee, **ACL-SELVA 2026**
