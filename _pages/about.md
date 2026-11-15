@@ -26,13 +26,16 @@ Outside of research, I enjoy fitness and strategy games such as Go, and I'm alwa
 
 <div class="news-feed" markdown="1">
 
+- **[Nov 2026]** Attended **[SGLang & LMSYS Summit 2026](https://www.sglang.io/summit-2026)** in San Francisco!
+- **[Nov 2026]** **Did the Judge See the Answer?** accepted to **WSDM 2027** 🎉!
 - **[Oct 2026]** Contributed to the launch of **[Together Post-Training](https://www.together.ai/blog/together-post-training)** 🚀: RL and SFT with your own training loop on Together AI!
 - **[Oct 2026]** Released **[ORL](https://introspective-diffusion.github.io/orl-dlm/)** for Diffusion LLMs! [[Paper]](https://arxiv.org/abs/2610.20687)
 - **[Sep 2026]** Released **QATFactory** for deployment-aligned quantization-aware training of LLMs! [[Paper]](https://arxiv.org/abs/2609.39223)
 - **[Sep 2026]** **[OSCAR](https://oscar-quantize.github.io/)** paper accepted to **NeurIPS 2026** 🎉! [[Paper]](https://arxiv.org/abs/2605.17757)
 - **[Sep 2026]** **OS-Omni** accepted to **NeurIPS 2026 Evaluations & Datasets Track**! [[Paper]](https://openreview.net/forum?id=UlijzWpwGW)
+- **[Sep 2026]** **Local or Escalate?** accepted to **NeurIPS 2026 Real-Time Conversational Agents Workshop**! [[Paper]](https://arxiv.org/abs/2611.01639)
 - **[Jul 2026]** Joined **[Together AI](https://www.together.ai/)** full-time as an **AI Researcher**!
-- **[Jul 2026]** Released **PaperPilot**: Multi-Turn Agentic Scientific Literature Search via Workflow Induction! [[Paper]](https://arxiv.org/abs/2607.00597)
+- **[Jul 2026]** Released first-author paper **PaperPilot**, accepted to **COLM 2026 LM4Sci Workshop**! [[Paper]](https://arxiv.org/abs/2607.00597)
 - **[May 2026]** Graduated from **UIUC** 🎓, *Magna Cum Laude*!
 - **[Apr 2026]** **[Aurora](https://aurora-spec-ai.github.io/)** and **[Agent Protocol](https://arxiv.org/pdf/2510.17149)** papers accepted to **ICML 2026** 🎉!
 - **[Feb 2026]** **[Aurora](https://aurora-spec-ai.github.io/)** Day Zero support for **Qwen3-Coder-Next-FP8**! [[Checkpoint]](https://huggingface.co/togethercomputer/Aurora-Spec-Qwen3-Coder-Next-FP8)
@@ -87,15 +90,18 @@ Outside of research, I enjoy fitness and strategy games such as Go, and I'm alwa
 - <span class="pub-venue">MLSys 2026 Oral</span> **Kitty: Accurate and Efficient 2-bit KV Cache Quantization with Dynamic Channel-wise Precision Boost**<br>
   Haojun Xia<sup>†</sup>, Xiaoxia Wu<sup>†</sup>, **Jisen Li**<sup>†</sup>, et al.<br>
   [[Paper]](https://arxiv.org/abs/2511.18643) [[Code]](https://github.com/Summer-Summer/Kitty)
+- <span class="pub-venue">COLM 2026 Workshop</span> **Multi-Turn Agentic Scientific Literature Search via Workflow Induction** (PaperPilot)<br>
+  **Jisen Li**, Bingxuan Li, Nanyi Jiang, et al.<br>
+  [[Paper]](https://arxiv.org/abs/2607.00597) [[Code]](https://github.com/mtilyxuegao/PaperPilot)
+- <span class="pub-venue">NeurIPS 2026 Workshop</span> **Local or Escalate? Post-Training Expert Routing for Real-Time Duplex Speech Models**<br>
+  Ruoyu He<sup>*</sup>, **Jisen Li**<sup>*</sup>, et al.<br>
+  [[Paper]](https://arxiv.org/abs/2611.01639)
 - <span class="pub-venue">Preprint</span> **On-Policy Residual Learning for Diffusion Language Models** (ORL)<br>
   Yifan Yu<sup>*</sup>, Yuqing Jian<sup>*</sup>, **Jisen Li**<sup>*</sup>, et al.<br>
   [[Paper]](https://arxiv.org/abs/2610.20687) [[Code]](https://github.com/Introspective-Diffusion/ORL) [[Project]](https://introspective-diffusion.github.io/orl-dlm/)
 - <span class="pub-venue">Preprint</span> **QATFactory: A Versatile, Deployment-Aligned Framework for Quantization-aware Training and Distillation of LLMs**<br>
   Weili Xu<sup>*</sup>, **Jisen Li**<sup>*</sup>, Yuqing Jian<sup>*</sup>, et al.<br>
   [[Paper]](https://arxiv.org/abs/2609.39223)
-- <span class="pub-venue">Preprint</span> **Multi-Turn Agentic Scientific Literature Search via Workflow Induction** (PaperPilot)<br>
-  **Jisen Li**<sup>*</sup>, Bingxuan Li<sup>*</sup>, Nanyi Jiang<sup>*</sup>, et al.<br>
-  [[Paper]](https://arxiv.org/abs/2607.00597) [[Code]](https://github.com/mtilyxuegao/PaperPilot)
 - <span class="pub-venue">Preprint</span> **SAW-INT4: System-Aware 4-Bit KV-Cache Quantization for Real-World LLM Serving**<br>
   Jinda Jia<sup>*</sup>, **Jisen Li**<sup>*</sup>, et al.<br>
   [[Paper]](https://arxiv.org/abs/2604.19157) [[Code]](https://github.com/togethercomputer/saw-int4)
@@ -137,7 +143,7 @@ Outside of research, I enjoy fitness and strategy games such as Go, and I'm alwa
 ### ![UIUC](../images/uiuc.png){: width="24px"} University of Illinois Urbana-Champaign <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jul 2025 – Present*</span>
 
 - **Scientific Literature Search Agent ([PaperPilot](https://arxiv.org/abs/2607.00597)):** Multi-turn search agent that induces executable DAG workflows over paper-search tools, improving Hit@5 from 58.0 to 77.0. Supervised by **[Prof. Bingxin Zhao](https://www.bingxinzhao.com/)** and **[Prof. Jiaxuan You](https://jiaxuan.web.illinois.edu/)**.
-- **AI Agent Protocol Benchmarking ([ProtocolBench](https://github.com/ulab-uiuc/AgentProtocols)):** Built a unified benchmark for multi-agent communication protocols across document QA, collaborative coding, and multi-agent path finding. Supervised by **[Prof. Jiaxuan You](https://jiaxuan.web.illinois.edu/)**.
+- **AI Agent Protocol Benchmarking ([ProtocolBench](https://github.com/ulab-uiuc/AgentProtocols)):** Built a unified benchmark for multi-agent communication protocols and ProtocolRouter, which selects protocols from task and runtime signals, improving failure recovery by up to 18%. Supervised by **[Prof. Jiaxuan You](https://jiaxuan.web.illinois.edu/)**.
 
 ### Earlier Research <span style="float: right; font-size: 0.9em; font-weight: normal;">*2020 – 2024*</span>
 
@@ -147,7 +153,7 @@ Outside of research, I enjoy fitness and strategy games such as Go, and I'm alwa
 ## Education
 
 **![UIUC](../images/uiuc.png){: width="24px"} University of Illinois Urbana-Champaign (UIUC)** <span style="float: right; font-size: 0.9em; font-weight: normal;">*Aug 2023 – May 2026*</span><br>
-B.S. in Mathematics + Computer Science, GPA: 3.98/4.0
+B.S. in Mathematics + Computer Science, GPA: 3.98/4.0, *Magna Cum Laude*
 
 **🌱 Gap Year** <span style="float: right; font-size: 0.9em; font-weight: normal;">*Jan 2023 – Aug 2023*</span>
 
@@ -156,5 +162,5 @@ Undergraduate Studies (Transferred)
 
 ## Academic Service
 
-- Reviewer, **ICLR 2027**
+- Reviewer, **ICLR 2027**, **MLSys 2027**
 - Program Committee, **ACL-SELVA 2026**
