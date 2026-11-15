@@ -163,5 +163,5 @@ Undergraduate Studies (Transferred)
 
 ## Academic Service
 
-- Reviewer, **ICLR 2027**, **MLSys 2027**
+- Reviewer, **ICLR 2027**, **MLSys 2027**, **CVPR 2027**
 - Program Committee, **ACL-SELVA 2026**
