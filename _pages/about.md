@@ -75,6 +75,7 @@ Outside of research, I enjoy fitness and strategy games such as Go, and I'm alwa
 
 <div class="pub-list" markdown="1">
 
+- <span class="pub-venue">WSDM 2027</span> **Did the Judge See the Answer? A Crossed Dose–Response Audit of LLM Relevance Judgments**
 - <span class="pub-venue">NeurIPS 2026</span> **OSCAR: Offline Spectral Covariance-Aware Rotation for 2-bit KV Cache Quantization**<br>
   Zhongzhu Zhou<sup>*</sup>, Donglin Zhuang<sup>*</sup>, **Jisen Li**, et al.<br>
   [[Paper]](https://arxiv.org/abs/2605.17757) [[Code]](https://github.com/FutureMLS-Lab/OSCAR) [[Project]](https://oscar-quantize.github.io/)
